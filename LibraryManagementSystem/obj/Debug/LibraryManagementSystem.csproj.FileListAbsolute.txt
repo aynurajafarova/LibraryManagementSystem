@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojAssemblyReference.cache
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.LoginForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.RegisterForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CopyComplete
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.UserClassWasCreated.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.DashboardForm.resources
