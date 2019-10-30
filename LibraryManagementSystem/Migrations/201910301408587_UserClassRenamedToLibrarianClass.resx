@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1XzW7jNhC+F+g7CDy1QNbMz6UN5F2kdlIEjZNgld37WBrbRClSJanUfrYe+kh9hQ71b8lO7OxuUfgiUzPf/HDmm9E/f/0dflinMnhGY4VWY3Y2OmUBqlgnQi3HLHeLdz+xD++//y68TtJ18LmWu/BypKnsmK2cyy45t/EKU7CjVMRGW71wo1inHBLNz09Pf+ZnZxwJghFWEIQfc+VEisUf+jvRKsbM5SBnOkFpq3N6ExWowT2kaDOIcczuxNyA2cxAwRJTVC7aWIfpaHp1x4IrKYBcilAuWABKaQeOHL78ZDFyRqtllNEByKdNhiS3AGmxCuSyFT80ptNzHxNvFWuoOLdOp0cCnl1USeJ99TelmjVJpDReU7rdxkddpLLOogDC7lu7nEjjJfenurykUYNxEuyRPGkqhgrL/06CSS5dbnCsMHcG5EnwmM+liH/DzZP+HdVY5VJ2XSfn6d3WAR09Gp2hcZuPuKgCuk1YwLf1eF+xUevolJHeKndxzoJ7Mg5ziU1ldLISOW3wV1RowGHyCM6hUR4Di9wOrPdsUQUaRU+1RSpHajEWzGB9h2rpVmNGjyy4EWtM6pPKi09KUEeSkjM5vmboOgUhv7mVR7D2T22Sb29opdXXTlrI234YdgmRkQNB97zVKsUxrt2OfqGrrVrGVta2IyphI3T93rMsaB0pWWvUacxdLjfOtRTJS46suZTvIdNwBllG2euQa3USRCWzTt5FxzNNWmLw2O4gnMbbxhI1ETFE7y2ZJk9vhLFuCg7m4O9vkqQDsd5V7ElzbWyQ7T6LtMmvVfzz1q3vGjOdO+ohtjm9oTC9VhExNq51iXegW4w7kGB20NREyzxV+6juJe2WeLoY7enhSBWzdGGqo8MxWt7owrSnRyCVxLAFUx4NMULeu5Z+JfBBKfRGSb+4XmrNvkhjvWnRXiuGVVu8vvwM+qQUYQEl51kkvkfqOiWBUfSHnEhB8bYCVNBigdaV05bR2nHeW5v+PysMtzaRh+4x//nOIHxaX90KBivFcWuCegYTr8D8kML6xy7a0avAFyH1x/2XgXVH+hFIx43t4Ug5cCq/PJTLhhuzZK4phNLV7kB/49AeMkDIux9J4RStWLYQ/pNJYexbqwWtZW7VQtc5pwC7HtUivSuZoYOE8nRlnFhA7Oh1jNYWy9ZnkHlRTHNMbtVD7rLcXVmL6Vxubb0hf9l+sZls+xw+ZP6f/RohkJuCQsAH9UsuZNL4fTNsu30QvmSqXiavaNkkuOWmQbofTJd9QFX6ppih8kzwhGkmCcw+qAie8S2+ETHc4RLiTU3k+0Fev4jttIdTAUsDqa0wWn3/4c/9l//7fwE6lFNQKxAAAA==</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>

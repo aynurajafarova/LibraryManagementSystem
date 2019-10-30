@@ -14,18 +14,18 @@ namespace LibraryManagementSystem.Forms
 {
     public partial class RegisterForm : Form
     {
-        private readonly UserService _userService;
+        private readonly LibrarianService _librarianService;
 
         public RegisterForm()
         {
             InitializeComponent();
 
-            _userService = new UserService();
+            _librarianService = new LibrarianService();
         }
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            User user = new User()
+            Librarian librarian = new Librarian()
             {
                 Username = TxtUsername.Text,
                 Email=TxtEmail.Text,
@@ -42,7 +42,7 @@ namespace LibraryManagementSystem.Forms
             }
             else
             {
-                _userService.Add(user);
+                _librarianService.Add(librarian);
 
                 ShowLoginForm();
               

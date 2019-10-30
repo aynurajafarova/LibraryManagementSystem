@@ -12,8 +12,11 @@ namespace LibraryManagementSystem.DAL
     {
         public LibraryContext() : base("LibraryContext") { }
 
-        public DbSet<User> Users { get; set; }
-       
+        public DbSet<Librarian> Librarians { get; set; }
+
+        public DbSet<Book> Books { get; set; }
+
+        public DbSet<Member> Members { get; set; }
 
     }
 }

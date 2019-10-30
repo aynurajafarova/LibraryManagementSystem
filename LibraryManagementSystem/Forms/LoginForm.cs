@@ -14,13 +14,13 @@ namespace LibraryManagementSystem.Forms
 {
     public partial class LoginForm : Form
     {
-        private readonly UserService _userService;
+        private readonly LibrarianService _librarianService;
 
         public LoginForm()
         {
             InitializeComponent();
 
-            _userService = new UserService();
+            _librarianService = new LibrarianService();
         }
 
 
@@ -61,18 +61,18 @@ namespace LibraryManagementSystem.Forms
 
         private void BtnLogin_Click_1(object sender, EventArgs e)
         {
-            User user = new User()
+            Librarian librarian = new Librarian()
             {
                 Username = TxtUsername.Text,
                 Password = TxtPassword.Text
             };
 
-            User findedUser = _userService.Find(user.Username, user.Password);
+            Librarian findedUser = _librarianService.Find(librarian.Username, librarian.Password);
 
             if (findedUser != null)
             {
                 this.Hide();
-                DashboardForm dashboardForm = new DashboardForm();
+                DashboardForm dashboardForm = new DashboardForm(TxtUsername.Text);
                 dashboardForm.Show();
             }
             else

@@ -8,28 +8,28 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Services
 {
-    class UserService
+    class LibrarianService
     {
         private readonly LibraryContext _libraryContext;
 
-        public UserService()
+        public LibrarianService()
         {
             _libraryContext = new LibraryContext();
         }
 
-        public int Add(User user)
+        public int Add(Librarian librarian)
         {
-            _libraryContext.Users.Add(user);
+            _libraryContext.Librarians.Add(librarian);
             _libraryContext.SaveChanges();
 
-            return user.Id;
+            return librarian.Id;
         }
 
-        public User Find(string username, string password)
+        public Librarian Find(string username, string password)
         {
-            User user = _libraryContext.Users.FirstOrDefault(u => u.Username== username && u.Password==password);
+            Librarian librarian = _libraryContext.Librarians.FirstOrDefault(l=>l.Username==username && l.Password==password);
 
-            return user;
+            return librarian;
         }
     }
 }

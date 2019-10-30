@@ -12,14 +12,24 @@ namespace LibraryManagementSystem.Forms
 {
     public partial class DashboardForm : Form
     {
-        public DashboardForm()
+        private string _username;
+
+        public DashboardForm( string Username)
         {
             InitializeComponent();
+            this._username = Username;
+            LblUsername.Text = Username + " , Welcome";
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
+        private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void addNewBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddBookForm addBookForm = new AddBookForm();
+            addBookForm.Show();
         }
     }
 }
