@@ -58,6 +58,7 @@ namespace LibraryManagementSystem.Forms
         private void ShowLoginForm()
         {
             this.Hide();
+
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
         }

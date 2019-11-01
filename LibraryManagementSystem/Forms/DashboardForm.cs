@@ -31,5 +31,11 @@ namespace LibraryManagementSystem.Forms
             AddBookForm addBookForm = new AddBookForm();
             addBookForm.Show();
         }
+
+        private void addNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddMemberForm addMemberForm = new AddMemberForm();
+            addMemberForm.Show();
+        }
     }
 }

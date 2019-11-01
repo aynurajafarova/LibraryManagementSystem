@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Services
 {
-    class BookService
+    class MemberService
     {
         private readonly LibraryContext _libraryContext;
 
-        public BookService()
+        public MemberService()
         {
             _libraryContext = new LibraryContext();
         }
 
-        public int Add(Book book)
+        public int Add(Member member)
         {
-            _libraryContext.Books.Add(book);
+            _libraryContext.Members.Add(member);
             _libraryContext.SaveChanges();
 
-            return book.Id;
+            return member.Id;
         }
     }
 }
