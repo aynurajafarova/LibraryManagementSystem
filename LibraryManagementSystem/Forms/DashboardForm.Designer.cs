@@ -38,6 +38,9 @@
             this.addNewLibrarianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LblUsername = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.editBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllLibrariansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +60,8 @@
             // 
             this.bookToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewBookToolStripMenuItem,
-            this.viewAllBooksToolStripMenuItem});
+            this.viewAllBooksToolStripMenuItem,
+            this.editBooksToolStripMenuItem});
             this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
             this.bookToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bookToolStripMenuItem.Text = "Book";
@@ -65,35 +69,38 @@
             // addNewBookToolStripMenuItem
             // 
             this.addNewBookToolStripMenuItem.Name = "addNewBookToolStripMenuItem";
-            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addNewBookToolStripMenuItem.Text = "Add new book";
             this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
             // 
             // viewAllBooksToolStripMenuItem
             // 
             this.viewAllBooksToolStripMenuItem.Name = "viewAllBooksToolStripMenuItem";
-            this.viewAllBooksToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.viewAllBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewAllBooksToolStripMenuItem.Text = "View all books";
+            this.viewAllBooksToolStripMenuItem.Click += new System.EventHandler(this.viewAllBooksToolStripMenuItem_Click);
             // 
             // memmberToolStripMenuItem
             // 
             this.memmberToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewMemberToolStripMenuItem});
+            this.addNewMemberToolStripMenuItem,
+            this.viewAllMembersToolStripMenuItem});
             this.memmberToolStripMenuItem.Name = "memmberToolStripMenuItem";
-            this.memmberToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.memmberToolStripMenuItem.Text = "Memmber";
+            this.memmberToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.memmberToolStripMenuItem.Text = "Member";
             // 
             // addNewMemberToolStripMenuItem
             // 
             this.addNewMemberToolStripMenuItem.Name = "addNewMemberToolStripMenuItem";
-            this.addNewMemberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewMemberToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.addNewMemberToolStripMenuItem.Text = "Add new member";
             this.addNewMemberToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberToolStripMenuItem_Click);
             // 
             // librarianToolStripMenuItem
             // 
             this.librarianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewLibrarianToolStripMenuItem});
+            this.addNewLibrarianToolStripMenuItem,
+            this.viewAllLibrariansToolStripMenuItem});
             this.librarianToolStripMenuItem.Name = "librarianToolStripMenuItem";
             this.librarianToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.librarianToolStripMenuItem.Text = "Librarian";
@@ -119,6 +126,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(763, 183);
             this.panel1.TabIndex = 2;
+            // 
+            // editBooksToolStripMenuItem
+            // 
+            this.editBooksToolStripMenuItem.Name = "editBooksToolStripMenuItem";
+            this.editBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editBooksToolStripMenuItem.Text = "Edit books";
+            // 
+            // viewAllMembersToolStripMenuItem
+            // 
+            this.viewAllMembersToolStripMenuItem.Name = "viewAllMembersToolStripMenuItem";
+            this.viewAllMembersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAllMembersToolStripMenuItem.Text = "View all members";
+            this.viewAllMembersToolStripMenuItem.Click += new System.EventHandler(this.viewAllMembersToolStripMenuItem_Click);
+            // 
+            // viewAllLibrariansToolStripMenuItem
+            // 
+            this.viewAllLibrariansToolStripMenuItem.Name = "viewAllLibrariansToolStripMenuItem";
+            this.viewAllLibrariansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAllLibrariansToolStripMenuItem.Text = "View all librarians";
+            this.viewAllLibrariansToolStripMenuItem.Click += new System.EventHandler(this.viewAllLibrariansToolStripMenuItem_Click);
             // 
             // DashboardForm
             // 
@@ -151,5 +178,8 @@
         private System.Windows.Forms.ToolStripMenuItem viewAllBooksToolStripMenuItem;
         private System.Windows.Forms.Label LblUsername;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem editBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewAllMembersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewAllLibrariansToolStripMenuItem;
     }
 }

@@ -1,13 +1,6 @@
 ﻿using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem.Forms
@@ -45,10 +38,10 @@ namespace LibraryManagementSystem.Forms
                 _bookService.Add(book);
                 MessageBox.Show("Added a book called " + TxtBookName.Text);
 
-                TxtBookName.Text = string.Empty;
-                TxtAuthorName.Text = string.Empty;
+                TxtBookName.Clear();
+                TxtAuthorName.Clear();
                 NumBookPrice.Value = 0;
-                TxtNumberOfBooks.Text = string.Empty;
+                TxtNumberOfBooks.Clear();
             }
 
         }

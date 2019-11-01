@@ -87,6 +87,24 @@
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ViewAllBooksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewAllBooksForm.Designer.cs">
+      <DependentUpon>ViewAllBooksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewAllLibrariansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewAllLibrariansForm.Designer.cs">
+      <DependentUpon>ViewAllLibrariansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewAllMembersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewAllMembersForm.Designer.cs">
+      <DependentUpon>ViewAllMembersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201910282125488_UserClassWasCreated.cs" />
     <Compile Include="Migrations\201910282125488_UserClassWasCreated.designer.cs">
       <DependentUpon>201910282125488_UserClassWasCreated.cs</DependentUpon>
@@ -130,6 +148,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewAllBooksForm.resx">
+      <DependentUpon>ViewAllBooksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewAllLibrariansForm.resx">
+      <DependentUpon>ViewAllLibrariansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewAllMembersForm.resx">
+      <DependentUpon>ViewAllMembersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910282125488_UserClassWasCreated.resx">
       <DependentUpon>201910282125488_UserClassWasCreated.cs</DependentUpon>

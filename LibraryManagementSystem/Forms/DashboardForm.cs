@@ -37,5 +37,23 @@ namespace LibraryManagementSystem.Forms
             AddMemberForm addMemberForm = new AddMemberForm();
             addMemberForm.Show();
         }
+
+        private void viewAllBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewAllBooksForm viewAllBooksForm = new ViewAllBooksForm();
+            viewAllBooksForm.Show();
+        }
+
+        private void viewAllMembersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewAllMembersForm viewAllMembersForm = new ViewAllMembersForm();
+            viewAllMembersForm.Show();
+        }
+
+        private void viewAllLibrariansToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewAllLibrariansForm viewAllLibrariansForm = new ViewAllLibrariansForm();
+            viewAllLibrariansForm.Show();
+        }
     }
 }
