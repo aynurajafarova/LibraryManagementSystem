@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Models
 {
@@ -30,6 +26,8 @@ namespace LibraryManagementSystem.Models
 
         [Column(TypeName ="date")]
         public DateTime CreatedAt { get; set; }
+
+        //public ICollection<Book> Books { get; set; }
 
     }
 }

@@ -24,5 +24,44 @@ namespace LibraryManagementSystem.Services
 
             return member.Id;
         }
+
+        public void Update(Member member)
+        {
+            if (!this.Contains(member))
+            {
+                throw new NullReferenceException();
+            }
+
+            _libraryContext.Entry(member).State = System.Data.Entity.EntityState.Modified;
+            _libraryContext.SaveChanges();
+        }
+
+        public void Delete(Member member)
+        {
+            if (!this.Contains(member))
+            {
+                throw new NullReferenceException();
+            }
+
+            _libraryContext.Members.Remove(member);
+            _libraryContext.SaveChanges();
+        }
+
+        public List<Member> AllMembers()
+        {
+            return _libraryContext.Members.ToList();
+        }
+
+        public Member Find(int Id)
+        {
+            Member member = _libraryContext.Members.FirstOrDefault(m => m.Id == Id);
+
+            return member;
+        }
+
+        public bool Contains(Member member)
+        {
+            return _libraryContext.Members.Contains(member);
+        }
     }
 }

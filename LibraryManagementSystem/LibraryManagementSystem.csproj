@@ -103,6 +103,10 @@
     <Compile Include="Migrations\201910302216217_AddedAttributesToMemberClassProperties.designer.cs">
       <DependentUpon>201910302216217_AddedAttributesToMemberClassProperties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.cs" />
+    <Compile Include="Migrations\201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.designer.cs">
+      <DependentUpon>201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Librarian.cs" />
@@ -138,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910302216217_AddedAttributesToMemberClassProperties.resx">
       <DependentUpon>201910302216217_AddedAttributesToMemberClassProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.resx">
+      <DependentUpon>201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
