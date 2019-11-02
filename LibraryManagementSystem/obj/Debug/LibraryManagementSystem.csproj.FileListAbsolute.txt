@@ -24,3 +24,4 @@ C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryMan
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ViewAllBooksForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ViewAllMembersForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ViewAllLibrariansForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.AddLibrarianForm.resources

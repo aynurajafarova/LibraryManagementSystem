@@ -55,5 +55,11 @@ namespace LibraryManagementSystem.Forms
             ViewAllLibrariansForm viewAllLibrariansForm = new ViewAllLibrariansForm();
             viewAllLibrariansForm.Show();
         }
+
+        private void addNewLibrarianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddLibrarianForm addLibrarianForm = new AddLibrarianForm();
+            addLibrarianForm.Show();
+        }
     }
 }

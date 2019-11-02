@@ -63,6 +63,12 @@
     <Compile Include="Forms\AddBookForm.Designer.cs">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddLibrarianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddLibrarianForm.Designer.cs">
+      <DependentUpon>AddLibrarianForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <Compile Include="Services\MemberService.cs" />
     <EmbeddedResource Include="Forms\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddLibrarianForm.resx">
+      <DependentUpon>AddLibrarianForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddMemberForm.resx">
       <DependentUpon>AddMemberForm.cs</DependentUpon>
