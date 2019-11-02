@@ -3,7 +3,6 @@ C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryMan
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojAssemblyReference.cache
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.LoginForm.resources
-C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.RegisterForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
@@ -25,3 +24,6 @@ C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryMan
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ViewAllMembersForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ViewAllLibrariansForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.AddLibrarianForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.EditBooksForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.MainboardForm.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.EditLibrariansForm.resources

@@ -27,7 +27,7 @@ namespace LibraryManagementSystem.Services
 
         public void Update(Member member)
         {
-            if (!this.Contains(member))
+            if (!this.Contains(member.Id))
             {
                 throw new NullReferenceException();
             }
@@ -38,7 +38,7 @@ namespace LibraryManagementSystem.Services
 
         public void Delete(Member member)
         {
-            if (!this.Contains(member))
+            if (!this.Contains(member.Id))
             {
                 throw new NullReferenceException();
             }
@@ -59,9 +59,9 @@ namespace LibraryManagementSystem.Services
             return member;
         }
 
-        public bool Contains(Member member)
+        public bool Contains(int id)
         {
-            return _libraryContext.Members.Contains(member);
+            return _libraryContext.Members.Any(m=>m.Id==id);
         }
     }
 }

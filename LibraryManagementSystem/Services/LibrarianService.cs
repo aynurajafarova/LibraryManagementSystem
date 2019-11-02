@@ -27,7 +27,7 @@ namespace LibraryManagementSystem.Services
 
         public void Update(Librarian librarian)
         {
-            if (!this.Contains(librarian))
+            if (!this.Contains(librarian.Id))
             {
                 throw new NullReferenceException();
             }
@@ -38,7 +38,7 @@ namespace LibraryManagementSystem.Services
 
         public void Delete(Librarian librarian)
         {
-            if (!this.Contains(librarian))
+            if (!this.Contains(librarian.Id))
             {
                 throw new NullReferenceException();
             }
@@ -59,9 +59,16 @@ namespace LibraryManagementSystem.Services
             return librarian;
         }
 
-        public bool Contains(Librarian librarian)
+        public Librarian FindId(int id)
         {
-            return _libraryContext.Librarians.Contains(librarian);
+            Librarian librarian = _libraryContext.Librarians.Find(id);
+
+            return librarian;
+        }
+
+        public bool Contains(int id)
+        {
+            return _libraryContext.Librarians.Any(l=>l.Id==id);
         }
     }
 }

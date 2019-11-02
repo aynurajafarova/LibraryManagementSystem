@@ -23,9 +23,9 @@ namespace LibraryManagementSystem.Services
             return book.Id;
         }
 
-        public void Update(Book book) 
+        public void Update(Book book)
         {
-            if (!this.Contains(book))
+            if (!this.Contains(book.Id))
             {
                 //throw new Exception("This book does not exist");
                 throw new NullReferenceException();
@@ -35,9 +35,9 @@ namespace LibraryManagementSystem.Services
             _libraryContext.SaveChanges();
         }
 
-        public void Delete(Book book) 
+        public void Delete(Book book)
         {
-            if (!this.Contains(book))
+            if (!this.Contains(book.Id))
             {
                 throw new NullReferenceException();
             }
@@ -46,21 +46,21 @@ namespace LibraryManagementSystem.Services
             _libraryContext.SaveChanges();
         }
 
-        public List<Book> AllBooks() 
+        public List<Book> AllBooks()
         {
             return _libraryContext.Books.ToList();
         }
 
-        public Book Find(int Id)
+        public Book Find(int id)
         {
-          Book book = _libraryContext.Books.FirstOrDefault(b => b.Id == Id);
+            Book book = _libraryContext.Books.Find(id);
 
             return book;
         }
 
-        public bool Contains(Book book)
+        public bool Contains(int id)
         {
-            return _libraryContext.Books.Contains(book);
+            return _libraryContext.Books.Any(b => b.Id == id);
         }
     }
 }

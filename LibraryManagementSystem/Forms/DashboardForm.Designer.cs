@@ -121,14 +121,14 @@
             // addNewLibrarianToolStripMenuItem
             // 
             this.addNewLibrarianToolStripMenuItem.Name = "addNewLibrarianToolStripMenuItem";
-            this.addNewLibrarianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewLibrarianToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.addNewLibrarianToolStripMenuItem.Text = "Add new librarian";
             this.addNewLibrarianToolStripMenuItem.Click += new System.EventHandler(this.addNewLibrarianToolStripMenuItem_Click);
             // 
             // viewAllLibrariansToolStripMenuItem
             // 
             this.viewAllLibrariansToolStripMenuItem.Name = "viewAllLibrariansToolStripMenuItem";
-            this.viewAllLibrariansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAllLibrariansToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.viewAllLibrariansToolStripMenuItem.Text = "View all librarians";
             this.viewAllLibrariansToolStripMenuItem.Click += new System.EventHandler(this.viewAllLibrariansToolStripMenuItem_Click);
             // 
