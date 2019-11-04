@@ -117,40 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="BooksName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="BooksAuthor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PurchaseDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="BooksName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="BooksAuthor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PurchaseDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAO1a227bRhB9L9B/IPjUAo5o2QjgGlQCRbYLo5bthk7eV+RIXmS5ZHeXjvRtfegn9Rc6y/tNlKiLGwRBgIAa7p6ZHZ6ZnRn437//sd8vfWa8gJA04CNzODg1DeBu4FG+GJmRmr+5MN+/+/kn+9rzl8bnbN25Xoc7uRyZz0qFl5Yl3WfwiRz41BWBDOZq4Aa+RbzAOjs9/c0aDi1ACBOxDMP+GHFFfYh/4M9JwF0IVUTYNPCAyVSOb5wY1bgnPsiQuDAy7+hMELGaEk4W4ANXzkoq8AdX4zvTGDNK0CQH2Nw0COeBIgoNvvwkwVEi4AsnRAFhT6sQcN2cMAnpQS6L5due6fRMn8kqNmZQbiRV4PcEHJ6nTrLq23dytZk7Ed14je5WK33q2JUj80MQfDGNuqLLCRN60XovJ99noLefGGsWneQ8QTrpfyfGJGIqEjDiEClB2InxGM0Ydf+A1VPwBfiIR4yVDUaT8V1FgKJHEYQg1OojzNNj3HqmYVX3WfWN+bbSnuSQt1ydn5nGPSonMwY5H0oOcVQg4HfgIIgC75EoBYJrDIg92tBe06X/z7QhATGoTGNKlnfAF+p5ZOLnMo0bugQvk6QWfOIUYxA3KRFBi4XdWseReg5Eh97hcfQ+RsJ9JhKu0FeZdv38RP0dwAR1CxRwqU+YaTwKfEpz1YVpOC7RgG0fsRv9z4ikH7CbCmUU2yrCqDO4krighO8RYTnGjzDbHGaY3gXvDrWLozD+2ieUdWjFx6MEGpHyayC8/0Hzc8C73HwQtVsH2hT8GYg9oiwB+BFim0PsBqE3hNjb41xmnidAylfXuym0z45zhW6Ir/OjaJ0I0KQYq563dnegYlWvCEXCVa7FWAxL1RK1mMbTwJXpQapWJ7AOqFIRi8QobEgq/0FS3Frdm/MLtg2hdINvgEkySBtGlpzaHJa7puh0rKTVyVoia01PZE9JGCIrSj1SKjGcpEGavHH6Nwx+gmG5sqVvyK3NNWEuwURZe4uq0dIbKqRC/pAZ0XSZeH5jWY0IaxycKSt/63oeLZyerdbPFbq1NYoJQ2pghSdv8HB6Q3xOyA1Ku6bGtrhNJYyIlvQ8CVjk83Upvmt30jqU9yeS7RGyNqCMkcm2R6kW9WWs6pseiEllX4FKRNtjFPV7GaaQNpFsq/Z161yyGmSqXcd1Zm7F21KaORR5i+TUn8Ede49D46I0L2MU0u2R0gu5DJOKelAvL5wr7MulPZCSi7oCk4i+GeplV9OheJdeaP1Jt27jcRhXVKpljELaI4FmpWclg2bCV2ZuD76twyiVeWWckviVudsoh+pLcu15WVQrf+y0FNk8N27UJskSPVIKXqin65KM67hg4PzFJozieYsFGBR0DlIljR42AMOz2sT525n+WlJ6bIsR8Kt3qlR7dGMv2rN/KY9Z+QvRZYloDlr3mqK2wg53gG0bknrx8z4DUh9TQX+/1aeg8cc59Az0+6BYfcTYyoeL/nSojBky0F98svx176ngnmjlSUQfqL7Tu++DH/X5WCs/3u6Qharjr0PBttKuMd86BGUa46t9Z1NbJMt+c6nm1GLz2Gnt1CmpKtDKWYAGJxamc6ptB1Ld86g2BeVZ1lbzqo5xVRt+PuTacZbVLNJsq/wnAPYVSLooIPQfBHBwdfVTgGZrbvk8yDiC5ypblC2pUWgKiiBryFgoOieuwtcuxlQ8W/1MWBTHwwy8W/4QqTBSYynxwKwyRrCtbv3xwK5qs/0Q6l/yEEdAM6km/gP/EFHm5XbftJB/DYSmeZrw0CpH6cS3WOVI941mYh1Q6r4rCIHrdPkEfsgQTD5wh7zALrbh7XoHC+Kuslp7PcjmD1F1u31FyUIQX6YYxX78iRz2/OW7/wDs23q7CSMAAA==</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>

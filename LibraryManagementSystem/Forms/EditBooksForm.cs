@@ -29,6 +29,10 @@ namespace LibraryManagementSystem.Forms
             _selectedBook = new Book();
 
             FillBooks();
+
+            BtnAdd.Show();
+            BtnDelete.Hide();
+            BtnUpdate.Hide();
         }
 
         private void FillBooks()
@@ -39,7 +43,8 @@ namespace LibraryManagementSystem.Forms
                                   book.Name,
                                   book.Author,
                                   book.Price,
-                                  book.Quantity);
+                                  book.Quantity,
+                                  book.PurchaseDate);
             }
         }
 
@@ -54,14 +59,66 @@ namespace LibraryManagementSystem.Forms
             TxtBookAuthor.Text = _selectedBook.Author;
             TxtBookPrice.Text = Convert.ToString(_selectedBook.Price);
             TxtBookQuantity.Text = _selectedBook.Quantity.ToString();
+            DtpPurchaseDate.Value = _selectedBook.PurchaseDate.Date;
+
+            BtnAdd.Hide();
+            BtnDelete.Show();
+            BtnUpdate.Show();
         }
 
-        private void BtnUpdate_Click(object sender, EventArgs e)
+
+        private void Reset()
+        {
+            TxtBookName.Clear();
+            TxtBookAuthor.Clear();
+            TxtBookPrice.ResetText();
+            TxtBookQuantity.Clear();
+            DtpPurchaseDate.ResetText();  
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            Book book = new Book()
+            {
+                Name = TxtBookName.Text,
+                Author = TxtBookAuthor.Text,
+                Price = Convert.ToDecimal(TxtBookPrice.Value),
+                Quantity = Convert.ToInt32(TxtBookQuantity.Text),
+                PurchaseDate = Convert.ToDateTime(DtpPurchaseDate.Value)
+            };
+
+            if (string.IsNullOrEmpty(TxtBookName.Text) ||
+                string.IsNullOrEmpty(TxtBookAuthor.Text) ||
+                string.IsNullOrEmpty(Convert.ToString(TxtBookPrice.Value)) ||
+                string.IsNullOrEmpty(Convert.ToString(TxtBookQuantity.Text)) ||
+                string.IsNullOrEmpty(Convert.ToString(DtpPurchaseDate.Value)))
+            {
+                MessageBox.Show("Zəhmət olmasa, bütün məlumatları daxil edin", "Uğursuz əməliyyat!");
+            }
+            else
+            {
+                _bookService.Add(book);
+
+                DgvBooks.Rows.Add(book.Id,
+                                  book.Name,
+                                  book.Author,
+                                  book.Price,
+                                  book.Quantity,
+                                  book.PurchaseDate);
+
+                MessageBox.Show(TxtBookName.Text+" adlı yeni kitab əlavə olundu");
+
+                Reset();
+            }
+        }
+
+        private void BtnUpdate_Click_1(object sender, EventArgs e)
         {
             _selectedBook.Name = TxtBookName.Text;
             _selectedBook.Author = TxtBookAuthor.Text;
             _selectedBook.Price = Convert.ToDecimal(TxtBookPrice.Text);
             _selectedBook.Quantity = Convert.ToInt32(TxtBookQuantity.Text);
+            _selectedBook.PurchaseDate = DtpPurchaseDate.Value;
 
             _bookService.Update(_selectedBook);
 
@@ -71,30 +128,25 @@ namespace LibraryManagementSystem.Forms
             DgvBooks.Rows[_selectedRowIndex].Cells[2].Value = _selectedBook.Author;
             DgvBooks.Rows[_selectedRowIndex].Cells[3].Value = _selectedBook.Price.ToString("0.00 $");
             DgvBooks.Rows[_selectedRowIndex].Cells[4].Value = _selectedBook.Quantity;
+            DgvBooks.Rows[_selectedRowIndex].Cells[5].Value = _selectedBook.PurchaseDate;
 
-            MessageBox.Show("Updated");
+
+            MessageBox.Show(_selectedBook.Name + " adlı kitab məlumatları yeniləndi", "Yeniləmə");
         }
 
-        private void BtnDelete_Click(object sender, EventArgs e)
+        private void BtnDelete_Click_1(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Bu kitabı silmək istədiyinizdən əminsiniz?", "Silmə", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
                 _bookService.Delete(_selectedBook);
 
                 DgvBooks.Rows.RemoveAt(_selectedRowIndex);
-                MessageBox.Show("Done");
+                MessageBox.Show(_selectedBook.Name + " adlı kitab silindi", "Silmə");
+
                 Reset();
             }
-        }
-
-        private void Reset()
-        {
-            TxtBookName.Clear();
-            TxtBookAuthor.Clear();
-            TxtBookPrice.Clear();
-            TxtBookQuantity.Clear();
         }
     }
 }

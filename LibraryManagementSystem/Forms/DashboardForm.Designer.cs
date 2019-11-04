@@ -71,7 +71,6 @@
             this.addNewBookToolStripMenuItem.Name = "addNewBookToolStripMenuItem";
             this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.addNewBookToolStripMenuItem.Text = "Add new book";
-            this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
             // 
             // viewAllBooksToolStripMenuItem
             // 
@@ -123,7 +122,6 @@
             this.addNewLibrarianToolStripMenuItem.Name = "addNewLibrarianToolStripMenuItem";
             this.addNewLibrarianToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.addNewLibrarianToolStripMenuItem.Text = "Add new librarian";
-            this.addNewLibrarianToolStripMenuItem.Click += new System.EventHandler(this.addNewLibrarianToolStripMenuItem_Click);
             // 
             // viewAllLibrariansToolStripMenuItem
             // 

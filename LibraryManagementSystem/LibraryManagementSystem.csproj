@@ -57,18 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\LibraryContext.cs" />
-    <Compile Include="Forms\AddBookForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddBookForm.Designer.cs">
-      <DependentUpon>AddBookForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddLibrarianForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddLibrarianForm.Designer.cs">
-      <DependentUpon>AddLibrarianForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\AddMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +131,14 @@
     <Compile Include="Migrations\201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.designer.cs">
       <DependentUpon>201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911042000095_PurchaseDatePropertyAddedToBookClass.cs" />
+    <Compile Include="Migrations\201911042000095_PurchaseDatePropertyAddedToBookClass.designer.cs">
+      <DependentUpon>201911042000095_PurchaseDatePropertyAddedToBookClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911042045279_PurchaseDatePropertyTypeWasChanged.cs" />
+    <Compile Include="Migrations\201911042045279_PurchaseDatePropertyTypeWasChanged.designer.cs">
+      <DependentUpon>201911042045279_PurchaseDatePropertyTypeWasChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Librarian.cs" />
@@ -152,12 +148,6 @@
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\LibrarianService.cs" />
     <Compile Include="Services\MemberService.cs" />
-    <EmbeddedResource Include="Forms\AddBookForm.resx">
-      <DependentUpon>AddBookForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddLibrarianForm.resx">
-      <DependentUpon>AddLibrarianForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddMemberForm.resx">
       <DependentUpon>AddMemberForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.resx">
       <DependentUpon>201911012059355_AttributesAddedToTheBookAndLibrarianClassesProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911042000095_PurchaseDatePropertyAddedToBookClass.resx">
+      <DependentUpon>201911042000095_PurchaseDatePropertyAddedToBookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911042045279_PurchaseDatePropertyTypeWasChanged.resx">
+      <DependentUpon>201911042045279_PurchaseDatePropertyTypeWasChanged.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

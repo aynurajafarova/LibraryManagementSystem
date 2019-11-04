@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LibraryManagementSystem.Models
@@ -13,8 +15,11 @@ namespace LibraryManagementSystem.Models
 
         [Required]
         [MaxLength(100)]
-
         public string Author { get; set; }
+
+        [Required]
+        [Column(TypeName = "date")]
+        public DateTime PurchaseDate { get; set; }
 
         [Required]
         [Column(TypeName ="money")]
@@ -22,8 +27,6 @@ namespace LibraryManagementSystem.Models
 
         [Required]
         public int Quantity { get; set; }
-
-        //public ICollection<Member> Members { get; set; }
 
     }
 }

@@ -26,11 +26,6 @@ namespace LibraryManagementSystem.Forms
             Application.Exit();
         }
 
-        private void addNewBookToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddBookForm addBookForm = new AddBookForm();
-            addBookForm.Show();
-        }
 
         private void addNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -56,10 +51,6 @@ namespace LibraryManagementSystem.Forms
             viewAllLibrariansForm.Show();
         }
 
-        private void addNewLibrarianToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddLibrarianForm addLibrarianForm = new AddLibrarianForm();
-            addLibrarianForm.Show();
-        }
+
     }
 }
