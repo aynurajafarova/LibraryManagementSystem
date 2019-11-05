@@ -27,12 +27,6 @@ namespace LibraryManagementSystem.Forms
         }
 
 
-        private void addNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddMemberForm addMemberForm = new AddMemberForm();
-            addMemberForm.Show();
-        }
-
         private void viewAllBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ViewAllBooksForm viewAllBooksForm = new ViewAllBooksForm();

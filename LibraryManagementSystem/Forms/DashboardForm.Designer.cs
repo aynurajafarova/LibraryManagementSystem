@@ -99,7 +99,6 @@
             this.addNewMemberToolStripMenuItem.Name = "addNewMemberToolStripMenuItem";
             this.addNewMemberToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.addNewMemberToolStripMenuItem.Text = "Add new member";
-            this.addNewMemberToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberToolStripMenuItem_Click);
             // 
             // viewAllMembersToolStripMenuItem
             // 

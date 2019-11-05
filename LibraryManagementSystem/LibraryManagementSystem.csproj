@@ -57,12 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\LibraryContext.cs" />
-    <Compile Include="Forms\AddMemberForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddMemberForm.Designer.cs">
-      <DependentUpon>AddMemberForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +74,12 @@
     </Compile>
     <Compile Include="Forms\EditLibrariansForm.Designer.cs">
       <DependentUpon>EditLibrariansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditMembersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditMembersForm.Designer.cs">
+      <DependentUpon>EditMembersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -139,6 +139,10 @@
     <Compile Include="Migrations\201911042045279_PurchaseDatePropertyTypeWasChanged.designer.cs">
       <DependentUpon>201911042045279_PurchaseDatePropertyTypeWasChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911051227314_PasswordPropertyAddedToMemberClass.cs" />
+    <Compile Include="Migrations\201911051227314_PasswordPropertyAddedToMemberClass.designer.cs">
+      <DependentUpon>201911051227314_PasswordPropertyAddedToMemberClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Librarian.cs" />
@@ -148,9 +152,6 @@
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\LibrarianService.cs" />
     <Compile Include="Services\MemberService.cs" />
-    <EmbeddedResource Include="Forms\AddMemberForm.resx">
-      <DependentUpon>AddMemberForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditLibrariansForm.resx">
       <DependentUpon>EditLibrariansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditMembersForm.resx">
+      <DependentUpon>EditMembersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -195,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911042045279_PurchaseDatePropertyTypeWasChanged.resx">
       <DependentUpon>201911042045279_PurchaseDatePropertyTypeWasChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051227314_PasswordPropertyAddedToMemberClass.resx">
+      <DependentUpon>201911051227314_PasswordPropertyAddedToMemberClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

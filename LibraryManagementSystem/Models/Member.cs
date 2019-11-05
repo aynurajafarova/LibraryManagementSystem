@@ -15,6 +15,11 @@ namespace LibraryManagementSystem.Models
 
         [Required]
         [MaxLength(50)]
+        public string Password { get; set; }
+
+
+        [Required]
+        [MaxLength(50)]
         public string Address { get; set; }
 
         [Required]
