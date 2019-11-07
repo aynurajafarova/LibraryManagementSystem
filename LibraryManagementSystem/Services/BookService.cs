@@ -62,5 +62,23 @@ namespace LibraryManagementSystem.Services
         {
             return _libraryContext.Books.Any(b => b.Id == id);
         }
+
+        //public List<Book> Search(string book)
+        //{
+        //    foreach (var book in _bookService.AllBooks())
+        //    {
+        //        if (book.Name.Contains(bookName))
+        //        {
+        //            DgvViewAllBooks.Rows.Clear();
+        //            DgvViewAllBooks.Rows.Add(book.Id,
+        //                                book.Name,
+        //                                book.Author,
+        //                                book.Price.ToString("0.00 $"),
+        //                                book.Quantity,
+        //                                book.PurchaseDate);
+        //        }
+
+        //    }
+        //}
     }
 }

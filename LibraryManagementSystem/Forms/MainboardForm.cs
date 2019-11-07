@@ -21,5 +21,29 @@ namespace LibraryManagementSystem.Forms
         {
             Application.Exit();
         }
+
+        private void BtnLibrarians_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllLibrariansForm viewAllLibrariansForm = new ViewAllLibrariansForm();
+            viewAllLibrariansForm.Show();
+        }
+
+        private void BtnMembers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllMembersForm viewAllMembersForm = new ViewAllMembersForm();
+            viewAllMembersForm.Show();
+        }
+
+        private void BtnBooks_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllBooksForm viewAllBooksForm = new ViewAllBooksForm();
+            viewAllBooksForm.Show();
+        }
     }
 }

@@ -57,12 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\LibraryContext.cs" />
-    <Compile Include="Forms\DashboardForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardForm.Designer.cs">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\EditBooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,9 +146,6 @@
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\LibrarianService.cs" />
     <Compile Include="Services\MemberService.cs" />
-    <EmbeddedResource Include="Forms\DashboardForm.resx">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditBooksForm.resx">
       <DependentUpon>EditBooksForm.cs</DependentUpon>
     </EmbeddedResource>
