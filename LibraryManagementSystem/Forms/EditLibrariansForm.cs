@@ -108,5 +108,21 @@ namespace LibraryManagementSystem.Forms
             TxtLibrarianPhone.Clear();
             TxtLibrarianEmail.Clear();
         }
+
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllLibrariansForm viewAllLibrariansForm = new ViewAllLibrariansForm();
+            viewAllLibrariansForm.Show();
+        }
+
+        private void BtnEditLibrarians_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
     }
 }

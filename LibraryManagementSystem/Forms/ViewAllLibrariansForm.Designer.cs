@@ -36,16 +36,16 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnBackArrow = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TxtLibrarianPhone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.TxtLibrarianEmail = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TxtLibrarianName = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.TxtLibrarianPhone = new System.Windows.Forms.TextBox();
             this.BtnSearchLibrarian = new System.Windows.Forms.Button();
+            this.TxtLibrarianName = new System.Windows.Forms.TextBox();
             this.BtnEditLibrarians = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvViewAllLibrarians)).BeginInit();
             this.panel1.SuspendLayout();
@@ -128,6 +128,27 @@
             this.panel1.Size = new System.Drawing.Size(898, 114);
             this.panel1.TabIndex = 7;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel3.Location = new System.Drawing.Point(589, 72);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(214, 1);
+            this.panel3.TabIndex = 24;
+            // 
+            // TxtLibrarianPhone
+            // 
+            this.TxtLibrarianPhone.BackColor = System.Drawing.Color.White;
+            this.TxtLibrarianPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtLibrarianPhone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TxtLibrarianPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLibrarianPhone.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtLibrarianPhone.Location = new System.Drawing.Point(589, 50);
+            this.TxtLibrarianPhone.Multiline = true;
+            this.TxtLibrarianPhone.Name = "TxtLibrarianPhone";
+            this.TxtLibrarianPhone.Size = new System.Drawing.Size(214, 20);
+            this.TxtLibrarianPhone.TabIndex = 23;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -190,40 +211,6 @@
             this.panel2.Size = new System.Drawing.Size(235, 1);
             this.panel2.TabIndex = 15;
             // 
-            // TxtLibrarianName
-            // 
-            this.TxtLibrarianName.BackColor = System.Drawing.Color.White;
-            this.TxtLibrarianName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtLibrarianName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtLibrarianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLibrarianName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtLibrarianName.Location = new System.Drawing.Point(29, 52);
-            this.TxtLibrarianName.Multiline = true;
-            this.TxtLibrarianName.Name = "TxtLibrarianName";
-            this.TxtLibrarianName.Size = new System.Drawing.Size(235, 20);
-            this.TxtLibrarianName.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel3.Location = new System.Drawing.Point(589, 72);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(214, 1);
-            this.panel3.TabIndex = 24;
-            // 
-            // TxtLibrarianPhone
-            // 
-            this.TxtLibrarianPhone.BackColor = System.Drawing.Color.White;
-            this.TxtLibrarianPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtLibrarianPhone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtLibrarianPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLibrarianPhone.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtLibrarianPhone.Location = new System.Drawing.Point(589, 50);
-            this.TxtLibrarianPhone.Multiline = true;
-            this.TxtLibrarianPhone.Name = "TxtLibrarianPhone";
-            this.TxtLibrarianPhone.Size = new System.Drawing.Size(214, 20);
-            this.TxtLibrarianPhone.TabIndex = 23;
-            // 
             // BtnSearchLibrarian
             // 
             this.BtnSearchLibrarian.BackColor = System.Drawing.Color.Transparent;
@@ -239,6 +226,19 @@
             this.BtnSearchLibrarian.TabIndex = 2;
             this.BtnSearchLibrarian.UseVisualStyleBackColor = false;
             this.BtnSearchLibrarian.Click += new System.EventHandler(this.BtnSearchLibrarian_Click);
+            // 
+            // TxtLibrarianName
+            // 
+            this.TxtLibrarianName.BackColor = System.Drawing.Color.White;
+            this.TxtLibrarianName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtLibrarianName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TxtLibrarianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLibrarianName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtLibrarianName.Location = new System.Drawing.Point(29, 52);
+            this.TxtLibrarianName.Multiline = true;
+            this.TxtLibrarianName.Name = "TxtLibrarianName";
+            this.TxtLibrarianName.Size = new System.Drawing.Size(235, 20);
+            this.TxtLibrarianName.TabIndex = 1;
             // 
             // BtnEditLibrarians
             // 
