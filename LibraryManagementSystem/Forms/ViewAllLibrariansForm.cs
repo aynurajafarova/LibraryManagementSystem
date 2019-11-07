@@ -49,6 +49,7 @@ namespace LibraryManagementSystem.Forms
             string librarianUsername = TxtLibrarianName.Text;
             string librarianEmail = TxtLibrarianEmail.Text;
             string librarianPhone = TxtLibrarianPhone.Text;
+            int findedLibrarian = 0;
 
             DgvViewAllLibrarians.Rows.Clear();
 
@@ -60,11 +61,13 @@ namespace LibraryManagementSystem.Forms
                                                   librarian.Password,
                                                   librarian.Email,
                                                   librarian.Phone);
+                    findedLibrarian += 1;
                 }
-                else
-                {
-                    MessageBox.Show("Sistemdə belə biri tapılmadı");
-                }
+               
+            }
+            if (findedLibrarian == 0)
+            {
+                MessageBox.Show("Sistemdə belə biri tapılmadı");
             }
         }
     }
