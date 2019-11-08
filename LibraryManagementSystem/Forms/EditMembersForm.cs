@@ -153,5 +153,21 @@ namespace LibraryManagementSystem.Forms
             TxtMemberPhone.Clear();
             DtpCreatedAt.ResetText();
         }
+
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllMembersForm viewAllMembersForm = new ViewAllMembersForm();
+            viewAllMembersForm.Show();
+        }
+
+        private void BtnMainboard_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
     }
 }

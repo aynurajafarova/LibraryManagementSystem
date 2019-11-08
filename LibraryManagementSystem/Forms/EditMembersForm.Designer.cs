@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMembersForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtMemberPassword = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnUpdate = new System.Windows.Forms.Button();
             this.BtnAdd = new System.Windows.Forms.Button();
@@ -48,9 +52,6 @@
             this.TxtMemberFullname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.DgvViewAllMembers = new System.Windows.Forms.DataGridView();
-            this.TxtMemberPassword = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +59,8 @@
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
+            this.BtnMainboard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvViewAllMembers)).BeginInit();
             this.SuspendLayout();
@@ -86,10 +89,41 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.TxtMemberFullname);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(35, 37);
+            this.panel1.Location = new System.Drawing.Point(90, 149);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 417);
+            this.panel1.Size = new System.Drawing.Size(402, 421);
             this.panel1.TabIndex = 2;
+            // 
+            // TxtMemberPassword
+            // 
+            this.TxtMemberPassword.BackColor = System.Drawing.Color.White;
+            this.TxtMemberPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtMemberPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TxtMemberPassword.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMemberPassword.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtMemberPassword.Location = new System.Drawing.Point(113, 160);
+            this.TxtMemberPassword.Multiline = true;
+            this.TxtMemberPassword.Name = "TxtMemberPassword";
+            this.TxtMemberPassword.Size = new System.Drawing.Size(250, 20);
+            this.TxtMemberPassword.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel6.Location = new System.Drawing.Point(111, 182);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 1);
+            this.panel6.TabIndex = 32;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(52, 164);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 19);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Şifrə:";
             // 
             // BtnDelete
             // 
@@ -103,7 +137,7 @@
             this.BtnDelete.Location = new System.Drawing.Point(199, 345);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(95, 40);
-            this.BtnDelete.TabIndex = 30;
+            this.BtnDelete.TabIndex = 9;
             this.BtnDelete.Text = "Sil";
             this.BtnDelete.UseVisualStyleBackColor = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -120,7 +154,7 @@
             this.BtnUpdate.Location = new System.Drawing.Point(93, 345);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(95, 40);
-            this.BtnUpdate.TabIndex = 29;
+            this.BtnUpdate.TabIndex = 8;
             this.BtnUpdate.Text = "Yenilə";
             this.BtnUpdate.UseVisualStyleBackColor = false;
             this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
@@ -137,7 +171,7 @@
             this.BtnAdd.Location = new System.Drawing.Point(94, 345);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(200, 40);
-            this.BtnAdd.TabIndex = 28;
+            this.BtnAdd.TabIndex = 7;
             this.BtnAdd.Text = "Əlavə et";
             this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
@@ -151,7 +185,7 @@
             this.DtpCreatedAt.Location = new System.Drawing.Point(114, 284);
             this.DtpCreatedAt.Name = "DtpCreatedAt";
             this.DtpCreatedAt.Size = new System.Drawing.Size(250, 21);
-            this.DtpCreatedAt.TabIndex = 26;
+            this.DtpCreatedAt.TabIndex = 6;
             // 
             // label6
             // 
@@ -160,7 +194,7 @@
             this.label6.Location = new System.Drawing.Point(50, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 18);
-            this.label6.TabIndex = 27;
+            this.label6.TabIndex = 6;
             this.label6.Text = "Tarix:";
             // 
             // label1
@@ -185,7 +219,7 @@
             this.TxtMemberAddress.Multiline = true;
             this.TxtMemberAddress.Name = "TxtMemberAddress";
             this.TxtMemberAddress.Size = new System.Drawing.Size(250, 20);
-            this.TxtMemberAddress.TabIndex = 23;
+            this.TxtMemberAddress.TabIndex = 4;
             // 
             // panel5
             // 
@@ -206,7 +240,7 @@
             this.TxtMemberPhone.Multiline = true;
             this.TxtMemberPhone.Name = "TxtMemberPhone";
             this.TxtMemberPhone.Size = new System.Drawing.Size(250, 20);
-            this.TxtMemberPhone.TabIndex = 4;
+            this.TxtMemberPhone.TabIndex = 5;
             // 
             // label5
             // 
@@ -215,7 +249,7 @@
             this.label5.Location = new System.Drawing.Point(33, 242);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 19);
-            this.label5.TabIndex = 20;
+            this.label5.TabIndex = 5;
             this.label5.Text = "Telefon:";
             // 
             // panel4
@@ -233,7 +267,7 @@
             this.label4.Location = new System.Drawing.Point(40, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 19);
-            this.label4.TabIndex = 17;
+            this.label4.TabIndex = 4;
             this.label4.Text = "Ünvan:";
             // 
             // panel3
@@ -264,7 +298,7 @@
             this.label3.Location = new System.Drawing.Point(45, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 19);
-            this.label3.TabIndex = 14;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Email:";
             // 
             // panel2
@@ -317,43 +351,12 @@
             this.Date});
             this.DgvViewAllMembers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DgvViewAllMembers.GridColor = System.Drawing.Color.CadetBlue;
-            this.DgvViewAllMembers.Location = new System.Drawing.Point(477, 37);
+            this.DgvViewAllMembers.Location = new System.Drawing.Point(539, 149);
             this.DgvViewAllMembers.Name = "DgvViewAllMembers";
             this.DgvViewAllMembers.ReadOnly = true;
-            this.DgvViewAllMembers.Size = new System.Drawing.Size(706, 400);
+            this.DgvViewAllMembers.Size = new System.Drawing.Size(706, 421);
             this.DgvViewAllMembers.TabIndex = 3;
             this.DgvViewAllMembers.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvViewAllMembers_RowHeaderMouseDoubleClick);
-            // 
-            // TxtMemberPassword
-            // 
-            this.TxtMemberPassword.BackColor = System.Drawing.Color.White;
-            this.TxtMemberPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtMemberPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtMemberPassword.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMemberPassword.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtMemberPassword.Location = new System.Drawing.Point(113, 160);
-            this.TxtMemberPassword.Multiline = true;
-            this.TxtMemberPassword.Name = "TxtMemberPassword";
-            this.TxtMemberPassword.Size = new System.Drawing.Size(250, 20);
-            this.TxtMemberPassword.TabIndex = 33;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel6.Location = new System.Drawing.Point(111, 182);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 1);
-            this.panel6.TabIndex = 32;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(52, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 19);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Şifrə:";
             // 
             // Id
             // 
@@ -398,16 +401,55 @@
             this.Date.Name = "Date";
             this.Date.ReadOnly = true;
             // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 9;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click);
+            // 
+            // BtnMainboard
+            // 
+            this.BtnMainboard.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnMainboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMainboard.FlatAppearance.BorderSize = 0;
+            this.BtnMainboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BtnMainboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMainboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMainboard.ForeColor = System.Drawing.Color.White;
+            this.BtnMainboard.Image = ((System.Drawing.Image)(resources.GetObject("BtnMainboard.Image")));
+            this.BtnMainboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMainboard.Location = new System.Drawing.Point(1049, 618);
+            this.BtnMainboard.Name = "BtnMainboard";
+            this.BtnMainboard.Size = new System.Drawing.Size(196, 42);
+            this.BtnMainboard.TabIndex = 10;
+            this.BtnMainboard.Text = "  Ana səhifəyə qayıt";
+            this.BtnMainboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMainboard.UseVisualStyleBackColor = false;
+            this.BtnMainboard.Click += new System.EventHandler(this.BtnMainboard_Click);
+            // 
             // EditMembersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 579);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.BtnMainboard);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.DgvViewAllMembers);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditMembersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditMembersForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvViewAllMembers)).EndInit();
@@ -447,5 +489,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.Button BtnBackArrow;
+        private System.Windows.Forms.Button BtnMainboard;
     }
 }
