@@ -148,5 +148,21 @@ namespace LibraryManagementSystem.Forms
                 Reset();
             }
         }
+
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ViewAllBooksForm viewAllBooksForm = new ViewAllBooksForm();
+            viewAllBooksForm.Show();
+        }
+
+        private void BtnMainboardForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditBooksForm));
             this.DgvBooks = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BooksName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +55,8 @@
             this.TxtBookName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
+            this.BtnMainboardForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvBooks)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBookPrice)).BeginInit();
@@ -76,10 +79,10 @@
             this.Quantity,
             this.PurchaseDate});
             this.DgvBooks.GridColor = System.Drawing.Color.CadetBlue;
-            this.DgvBooks.Location = new System.Drawing.Point(495, 47);
+            this.DgvBooks.Location = new System.Drawing.Point(573, 163);
             this.DgvBooks.Name = "DgvBooks";
             this.DgvBooks.ReadOnly = true;
-            this.DgvBooks.Size = new System.Drawing.Size(675, 343);
+            this.DgvBooks.Size = new System.Drawing.Size(675, 395);
             this.DgvBooks.TabIndex = 2;
             this.DgvBooks.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvBooks_RowHeaderMouseDoubleClick);
             // 
@@ -141,7 +144,7 @@
             this.panel1.Controls.Add(this.TxtBookName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(30, 27);
+            this.panel1.Location = new System.Drawing.Point(103, 163);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(426, 395);
             this.panel1.TabIndex = 3;
@@ -356,15 +359,54 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Yeni kitab:";
             // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 9;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click);
+            // 
+            // BtnMainboardForm
+            // 
+            this.BtnMainboardForm.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnMainboardForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMainboardForm.FlatAppearance.BorderSize = 0;
+            this.BtnMainboardForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BtnMainboardForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMainboardForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMainboardForm.ForeColor = System.Drawing.Color.White;
+            this.BtnMainboardForm.Image = ((System.Drawing.Image)(resources.GetObject("BtnMainboardForm.Image")));
+            this.BtnMainboardForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMainboardForm.Location = new System.Drawing.Point(1052, 620);
+            this.BtnMainboardForm.Name = "BtnMainboardForm";
+            this.BtnMainboardForm.Size = new System.Drawing.Size(196, 42);
+            this.BtnMainboardForm.TabIndex = 10;
+            this.BtnMainboardForm.Text = "  Ana səhifəyə qayıt";
+            this.BtnMainboardForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMainboardForm.UseVisualStyleBackColor = false;
+            this.BtnMainboardForm.Click += new System.EventHandler(this.BtnMainboardForm_Click);
+            // 
             // EditBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 450);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.BtnMainboardForm);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DgvBooks);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditBooksForm";
             this.Text = "EditBooksForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.DgvBooks)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -401,5 +443,7 @@
         private System.Windows.Forms.TextBox TxtBookName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnBackArrow;
+        private System.Windows.Forms.Button BtnMainboardForm;
     }
 }
