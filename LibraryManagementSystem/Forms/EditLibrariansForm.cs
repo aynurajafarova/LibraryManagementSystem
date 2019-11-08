@@ -63,7 +63,15 @@ namespace LibraryManagementSystem.Forms
 
             _librarianService.Add(librarian);
 
+            DgvViewAllLibrarians.Rows.Add(librarian.Id,
+                                          librarian.Username,
+                                          librarian.Email,
+                                          librarian.Password,
+                                          librarian.Phone);
+
             MessageBox.Show(TxtLibrarianName.Text + " adlı şəxs əlavə olundu", "Əlavə olundu");
+
+            Reset();
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
