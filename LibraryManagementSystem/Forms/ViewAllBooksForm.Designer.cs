@@ -47,6 +47,8 @@
             this.TxtBookAuthor = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TxtBookName = new System.Windows.Forms.TextBox();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
+            this.BtnEditBooks = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvViewAllBooks)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumBookPrice)).BeginInit();
@@ -69,7 +71,7 @@
             this.Quantity,
             this.PurchaseDate});
             this.DgvViewAllBooks.GridColor = System.Drawing.Color.CadetBlue;
-            this.DgvViewAllBooks.Location = new System.Drawing.Point(13, 179);
+            this.DgvViewAllBooks.Location = new System.Drawing.Point(159, 256);
             this.DgvViewAllBooks.Name = "DgvViewAllBooks";
             this.DgvViewAllBooks.ReadOnly = true;
             this.DgvViewAllBooks.Size = new System.Drawing.Size(970, 343);
@@ -139,7 +141,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.BtnSearchBook);
             this.panel1.Controls.Add(this.TxtBookName);
-            this.panel1.Location = new System.Drawing.Point(13, 23);
+            this.panel1.Location = new System.Drawing.Point(159, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(970, 114);
             this.panel1.TabIndex = 6;
@@ -243,17 +245,53 @@
             this.TxtBookName.Size = new System.Drawing.Size(235, 20);
             this.TxtBookName.TabIndex = 1;
             // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 10;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click);
+            // 
+            // BtnEditBooks
+            // 
+            this.BtnEditBooks.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnEditBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditBooks.FlatAppearance.BorderSize = 0;
+            this.BtnEditBooks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BtnEditBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditBooks.ForeColor = System.Drawing.Color.White;
+            this.BtnEditBooks.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditBooks.Image")));
+            this.BtnEditBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEditBooks.Location = new System.Drawing.Point(854, 656);
+            this.BtnEditBooks.Name = "BtnEditBooks";
+            this.BtnEditBooks.Size = new System.Drawing.Size(275, 42);
+            this.BtnEditBooks.TabIndex = 11;
+            this.BtnEditBooks.Text = "  Kitablar cədvəlində dəyişiklik et";
+            this.BtnEditBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnEditBooks.UseVisualStyleBackColor = false;
+            this.BtnEditBooks.Click += new System.EventHandler(this.BtnEditBooks_Click);
+            // 
             // ViewAllBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(999, 580);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.BtnEditBooks);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DgvViewAllBooks);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewAllBooksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View All Books:";
@@ -285,5 +323,7 @@
         private System.Windows.Forms.TextBox TxtBookAuthor;
         private System.Windows.Forms.NumericUpDown NumBookPrice;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button BtnBackArrow;
+        private System.Windows.Forms.Button BtnEditBooks;
     }
 }

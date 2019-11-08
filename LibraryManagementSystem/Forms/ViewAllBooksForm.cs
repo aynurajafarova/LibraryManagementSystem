@@ -15,16 +15,7 @@ namespace LibraryManagementSystem.Forms
             InitializeComponent();
 
             _bookService = new BookService();
-            //foreach (var book in _bookService.AllBooks())
-            //{
-
-            //    DgvViewAllBooks.Rows.Add(book.Id,
-            //                             book.Name, 
-            //                             book.Author, 
-            //                             book.Price.ToString("0.00 $"), 
-            //                             book.Quantity,
-            //                             book.PurchaseDate);
-            //}
+            
             FillBooksTable();
         }
 
@@ -41,27 +32,15 @@ namespace LibraryManagementSystem.Forms
                                          book.PurchaseDate);
             }
 
-            //var books = _bookService.AllBooks();
         }
 
         private void BtnSearchBook_Click(object sender, System.EventArgs e)
         {
-            //var searchResultList = _bookService.Search(TxtBookName.Text, 
-            //                                           TxtBookAuthor.Text, 
-            //                                           Convert.ToDecimal(NumBookPrice));
-
-            //DgvViewAllBooks.Rows.Clear();
-
-            //foreach (var book in _bookService.AllBooks())
-            //{
-            //    DgvViewAllBooks.Rows.Add(book.Name,
-            //                             book.Author, 
-            //                             book.Price);
-            //}
 
             string bookName = TxtBookName.Text;
             string bookAuthor = TxtBookAuthor.Text;
             decimal bookPrice = NumBookPrice.Value;
+            int findedBook = 0;
 
             DgvViewAllBooks.Rows.Clear();
 
@@ -73,19 +52,35 @@ namespace LibraryManagementSystem.Forms
 
                    
                     DgvViewAllBooks.Rows.Add(book.Id,
-                                        book.Name,
-                                        book.Author,
-                                        book.Price.ToString("0.00 $"),
-                                        book.Quantity,
-                                        book.PurchaseDate);
+                                             book.Name,
+                                             book.Author,
+                                             book.Price.ToString("0.00 $"),
+                                             book.Quantity,
+                                             book.PurchaseDate);
+                    findedBook += 1;
                 }
-                
-               
+         
             }
+            if (findedBook == 0)
+            {
+                MessageBox.Show("Sistemdə belə bir kitab tapılmadı");
+            }
+        }
 
-            //FillBooksTable();
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
 
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
 
+        private void BtnEditBooks_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EditBooksForm editBooksForm = new EditBooksForm();
+            editBooksForm.Show();
         }
     }
 }
