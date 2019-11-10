@@ -18,5 +18,8 @@ namespace LibraryManagementSystem.DAL
 
         public DbSet<Member> Members { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+
+
     }
 }

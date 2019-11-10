@@ -33,5 +33,7 @@ namespace LibraryManagementSystem.Models
         [Column(TypeName ="date")]
         public DateTime CreatedAt { get; set; }
 
+        public List<Order> Orders { get; set; }
+
     }
 }

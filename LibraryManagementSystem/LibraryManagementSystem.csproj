@@ -87,6 +87,12 @@
     <Compile Include="Forms\MainboardForm.Designer.cs">
       <DependentUpon>MainboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ViewAllBooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,7 @@
     <Compile Include="Forms\ViewAllMembersForm.Designer.cs">
       <DependentUpon>ViewAllMembersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ComboItem.cs" />
     <Compile Include="Migrations\201910282125488_UserClassWasCreated.cs" />
     <Compile Include="Migrations\201910282125488_UserClassWasCreated.designer.cs">
       <DependentUpon>201910282125488_UserClassWasCreated.cs</DependentUpon>
@@ -137,15 +144,21 @@
     <Compile Include="Migrations\201911051227314_PasswordPropertyAddedToMemberClass.designer.cs">
       <DependentUpon>201911051227314_PasswordPropertyAddedToMemberClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911101555445_OrderClassWasCreated.cs" />
+    <Compile Include="Migrations\201911101555445_OrderClassWasCreated.designer.cs">
+      <DependentUpon>201911101555445_OrderClassWasCreated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Librarian.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\LibrarianService.cs" />
     <Compile Include="Services\MemberService.cs" />
+    <Compile Include="Services\OrderService.cs" />
     <EmbeddedResource Include="Forms\EditBooksForm.resx">
       <DependentUpon>EditBooksForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainboardForm.resx">
       <DependentUpon>MainboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewAllBooksForm.resx">
       <DependentUpon>ViewAllBooksForm.cs</DependentUpon>
@@ -194,6 +210,9 @@
     <EmbeddedResource Include="Migrations\201911051227314_PasswordPropertyAddedToMemberClass.resx">
       <DependentUpon>201911051227314_PasswordPropertyAddedToMemberClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911101555445_OrderClassWasCreated.resx">
+      <DependentUpon>201911101555445_OrderClassWasCreated.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -224,6 +243,7 @@
   <ItemGroup>
     <None Include="Resources\admin.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

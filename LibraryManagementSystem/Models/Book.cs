@@ -28,5 +28,6 @@ namespace LibraryManagementSystem.Models
         [Required]
         public int Quantity { get; set; }
 
+        public List<Order> Orders { get; set; }
     }
 }
