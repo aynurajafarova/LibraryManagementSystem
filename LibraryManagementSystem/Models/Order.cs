@@ -20,6 +20,10 @@ namespace LibraryManagementSystem.Models
         [Column(TypeName = "date")]
         public DateTime ReturnDate { get; set; }
 
+        [Required]
+        [Column(TypeName = "date")]
+        public DateTime MustBeReturned { get; set; }
+
         [Column(TypeName = "money")]
         public decimal Cost { get; set; }
 

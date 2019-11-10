@@ -79,7 +79,7 @@ namespace LibraryManagementSystem.Forms
                         if (order.MemberId == _selectedMember.Id && book.Id == order.BookId)
                         {
                             DgvOrders.Rows.Clear();
-                            DgvOrders.Rows.Add(order.Id, order.Book.Name, order.OrderDate, order.ReturnDate, order.Cost, order.Returned);
+                            DgvOrders.Rows.Add(order.Id, order.Book.Name, order.OrderDate, order.MustBeReturned, order.Cost, order.Returned);
                         }
                     }
                 }
@@ -120,7 +120,7 @@ namespace LibraryManagementSystem.Forms
         {
             if (DtpReturnDate.Value < DateTime.Now)
             {
-                MessageBox.Show("nese error text");
+                MessageBox.Show("Qaytarilacaq tarix kitab goturulen tarixden kicik olmamalidi");
                 MessageBox.Show(_selectedMember.Id.ToString());
 
                 return;
