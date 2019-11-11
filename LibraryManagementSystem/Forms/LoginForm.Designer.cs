@@ -35,6 +35,7 @@
             this.BtnLogin = new System.Windows.Forms.Button();
             this.TxtUsername = new System.Windows.Forms.TextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.panel1.Controls.Add(this.BtnLogin);
             this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.TxtPassword);
-            this.panel1.Location = new System.Drawing.Point(28, 27);
+            this.panel1.Location = new System.Drawing.Point(35, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 220);
             this.panel1.TabIndex = 2;
@@ -80,14 +81,17 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.BackColor = System.Drawing.Color.CadetBlue;
-            this.BtnLogin.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnLogin.FlatAppearance.BorderSize = 0;
+            this.BtnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.ForeColor = System.Drawing.Color.White;
             this.BtnLogin.Location = new System.Drawing.Point(36, 140);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(233, 40);
             this.BtnLogin.TabIndex = 3;
-            this.BtnLogin.Text = "Login";
+            this.BtnLogin.Text = "Daxil olun";
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click_1);
             // 
@@ -118,19 +122,32 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(233, 20);
             this.TxtPassword.TabIndex = 2;
+            this.TxtPassword.UseSystemPasswordChar = true;
             this.TxtPassword.Enter += new System.EventHandler(this.TxtUsername_Enter);
             this.TxtPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtPassword_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(29, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(312, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Kitabxana İdarəetmə Sistemi";
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(366, 271);
+            this.ClientSize = new System.Drawing.Size(377, 345);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
@@ -139,6 +156,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -150,5 +168,6 @@
         private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Label LblLoginErrors;
+        private System.Windows.Forms.Label label1;
     }
 }

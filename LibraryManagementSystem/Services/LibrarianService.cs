@@ -52,7 +52,7 @@ namespace LibraryManagementSystem.Services
             return _libraryContext.Librarians.ToList();
         }
 
-        public Librarian Find(string username, string password)
+        public Librarian Login(string username, string password)
         {
             Librarian librarian = _libraryContext.Librarians.FirstOrDefault(l=>l.Username==username && l.Password==password);
 

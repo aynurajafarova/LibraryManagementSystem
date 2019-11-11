@@ -16,7 +16,7 @@ namespace LibraryManagementSystem.Forms
             _librarianService = new LibrarianService();
         }
 
-
+        // This region is created to change the style of text fields.
         #region TextBoxDetails
         private void SelectedInput()
         {
@@ -51,15 +51,17 @@ namespace LibraryManagementSystem.Forms
         #endregion
 
 
+        //Login to Mainboard form
         private void BtnLogin_Click_1(object sender, EventArgs e)
         {
+
             Librarian librarian = new Librarian()
             {
                 Username = TxtUsername.Text,
                 Password = TxtPassword.Text
             };
 
-            Librarian findedUser = _librarianService.Find(librarian.Username, librarian.Password);
+            Librarian findedUser = _librarianService.Login(librarian.Username, librarian.Password);
 
             if (findedUser != null)
             {
@@ -70,7 +72,8 @@ namespace LibraryManagementSystem.Forms
             }
             else
             {
-                LblLoginErrors.Text = "Username or password is not valid.";
+                MessageBox.Show("İstifadəçi adı və ya Şifrə səhvdir");
+                return;
             }
         }
     }
