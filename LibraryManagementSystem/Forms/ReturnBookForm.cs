@@ -35,11 +35,14 @@ namespace LibraryManagementSystem.Forms
             _selectedMember = new Member();
             _selectedOrder = new Order();
 
-            FillBooks();
+            FillOrders();
             FillMemberCombo();
         }
 
-        private void FillBooks()
+
+
+        // this method fills DgvOrders table
+        private void FillOrders()
         {
             if (_selectedMember != null)
             {
@@ -59,6 +62,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This method fills CmbMember with members name
         private void FillMemberCombo()
         {
             foreach (Member member in _memberService.AllMembers())
@@ -82,10 +87,12 @@ namespace LibraryManagementSystem.Forms
                     BtnReturn.Hide();
                     BtnCancel.Show();
                 }
-                else if ((DateTime.Now - _selectedOrder.MustBeReturned).Days > 0)
+                else if ((DateTime.Now.Day - _selectedOrder.MustBeReturned.Day) > 0)
                 {
-                    decimal Payment = (_selectedOrder.Cost + ((DateTime.Now - _selectedOrder.MustBeReturned).Days) * (_selectedOrder.Cost * 5 / 1000));
+                    decimal Payment = (_selectedOrder.Cost + (DateTime.Now.Day - _selectedOrder.MustBeReturned.Day) + (_selectedOrder.Cost * 5 / 100));
+                    
                     TxtPayment.Text = Payment.ToString();
+                    
                     BtnReturn.Show();
                     BtnCancel.Hide();
                 }
@@ -97,11 +104,16 @@ namespace LibraryManagementSystem.Forms
                 }
                 return;
             }
-            MessageBox.Show("This Book Is already Returned");
-            TxtPayment.Text = string.Empty;
-            TxtReturningBook.Text = string.Empty;
+
+
+
+            //TxtPayment.Text = string.Empty;
+            //TxtReturningBook.Text = string.Empty;
+            Reset();
         }
 
+
+        // This method shows returned book
         private void BtnReturn_Click(object sender, EventArgs e)
         {
             _selectedOrder.Returned = true;
@@ -119,6 +131,8 @@ namespace LibraryManagementSystem.Forms
             TxtReturningBook.Text = string.Empty;
         }
 
+
+        // cancel the order
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             _orderService.Delete(_selectedOrder);
@@ -130,9 +144,19 @@ namespace LibraryManagementSystem.Forms
             _selectedMember = _memberService.Find((CmbMember.SelectedItem as ComboItem).Id);
             CmbMember.Text = _selectedMember.Fullname;
             //_selectedMember = _memberService.Find((CmbMember.SelectedItem as ComboItem).Id);
-            Reset();
+            //Reset();
             DgvOrders.Rows.Clear();
-            FillBooks();
+            FillOrders();
+        }
+
+
+        // This event will close the current - ReturnBookForm form and open the MainboardForm
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
         }
     }
 }

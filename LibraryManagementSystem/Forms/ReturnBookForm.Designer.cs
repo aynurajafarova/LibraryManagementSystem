@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnBookForm));
             this.BtnCancel = new System.Windows.Forms.Button();
             this.LblClient = new System.Windows.Forms.Label();
             this.CmbMember = new System.Windows.Forms.ComboBox();
-            this.PnlHeader = new System.Windows.Forms.Panel();
-            this.LblAdd = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LblReturningBook = new System.Windows.Forms.Label();
             this.BtnReturn = new System.Windows.Forms.Button();
@@ -45,20 +44,20 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TxtReturningBook = new System.Windows.Forms.TextBox();
             this.TxtPayment = new System.Windows.Forms.TextBox();
-            this.PnlHeader.SuspendLayout();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnCancel
             // 
-            this.BtnCancel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnCancel.BackColor = System.Drawing.Color.DarkBlue;
             this.BtnCancel.FlatAppearance.BorderSize = 0;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancel.ForeColor = System.Drawing.Color.White;
-            this.BtnCancel.Location = new System.Drawing.Point(478, 403);
+            this.BtnCancel.Location = new System.Drawing.Point(945, 117);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(118, 40);
+            this.BtnCancel.Size = new System.Drawing.Size(138, 40);
             this.BtnCancel.TabIndex = 25;
             this.BtnCancel.Text = "Sifarişi ləğv et";
             this.BtnCancel.UseVisualStyleBackColor = false;
@@ -68,69 +67,58 @@
             // LblClient
             // 
             this.LblClient.AutoSize = true;
-            this.LblClient.Location = new System.Drawing.Point(106, 8);
+            this.LblClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblClient.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LblClient.Location = new System.Drawing.Point(184, 131);
             this.LblClient.Name = "LblClient";
-            this.LblClient.Size = new System.Drawing.Size(58, 13);
+            this.LblClient.Size = new System.Drawing.Size(69, 18);
             this.LblClient.TabIndex = 24;
-            this.LblClient.Text = "Istifadechi:";
+            this.LblClient.Text = "İstifadəçi:";
             // 
             // CmbMember
             // 
+            this.CmbMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbMember.FormattingEnabled = true;
-            this.CmbMember.Location = new System.Drawing.Point(106, 28);
+            this.CmbMember.Location = new System.Drawing.Point(187, 157);
             this.CmbMember.Name = "CmbMember";
-            this.CmbMember.Size = new System.Drawing.Size(176, 21);
+            this.CmbMember.Size = new System.Drawing.Size(176, 26);
             this.CmbMember.TabIndex = 23;
             this.CmbMember.SelectedIndexChanged += new System.EventHandler(this.CmbMember_SelectedIndexChanged);
-            // 
-            // PnlHeader
-            // 
-            this.PnlHeader.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.PnlHeader.Controls.Add(this.LblAdd);
-            this.PnlHeader.Location = new System.Drawing.Point(106, 68);
-            this.PnlHeader.Name = "PnlHeader";
-            this.PnlHeader.Size = new System.Drawing.Size(588, 31);
-            this.PnlHeader.TabIndex = 22;
-            // 
-            // LblAdd
-            // 
-            this.LblAdd.AutoSize = true;
-            this.LblAdd.Location = new System.Drawing.Point(3, 9);
-            this.LblAdd.Name = "LblAdd";
-            this.LblAdd.Size = new System.Drawing.Size(100, 13);
-            this.LblAdd.TabIndex = 5;
-            this.LblAdd.Text = "Click to return Book";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(293, 403);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(691, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(138, 18);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Ödəniş";
+            this.label1.Text = "Ödəniləcək məbləğ:";
             // 
             // LblReturningBook
             // 
             this.LblReturningBook.AutoSize = true;
-            this.LblReturningBook.Location = new System.Drawing.Point(106, 402);
+            this.LblReturningBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReturningBook.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LblReturningBook.Location = new System.Drawing.Point(433, 131);
             this.LblReturningBook.Name = "LblReturningBook";
-            this.LblReturningBook.Size = new System.Drawing.Size(92, 13);
+            this.LblReturningBook.Size = new System.Drawing.Size(163, 18);
             this.LblReturningBook.TabIndex = 19;
-            this.LblReturningBook.Text = "Qaytarılacaq kitab";
+            this.LblReturningBook.Text = "Qaytarılacaq kitabın adı:";
             // 
             // BtnReturn
             // 
-            this.BtnReturn.BackColor = System.Drawing.Color.ForestGreen;
+            this.BtnReturn.BackColor = System.Drawing.Color.DarkBlue;
             this.BtnReturn.FlatAppearance.BorderSize = 0;
             this.BtnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BtnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReturn.ForeColor = System.Drawing.Color.White;
-            this.BtnReturn.Location = new System.Drawing.Point(602, 402);
+            this.BtnReturn.Location = new System.Drawing.Point(945, 163);
             this.BtnReturn.Name = "BtnReturn";
-            this.BtnReturn.Size = new System.Drawing.Size(92, 40);
+            this.BtnReturn.Size = new System.Drawing.Size(138, 40);
             this.BtnReturn.TabIndex = 17;
-            this.BtnReturn.Text = "Qaytar";
+            this.BtnReturn.Text = "Kitabı qaytar";
             this.BtnReturn.UseVisualStyleBackColor = false;
             this.BtnReturn.Click += new System.EventHandler(this.BtnReturn_Click);
             // 
@@ -149,10 +137,10 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.DgvOrders.Location = new System.Drawing.Point(106, 99);
+            this.DgvOrders.Location = new System.Drawing.Point(187, 281);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
-            this.DgvOrders.Size = new System.Drawing.Size(588, 274);
+            this.DgvOrders.Size = new System.Drawing.Size(896, 274);
             this.DgvOrders.TabIndex = 16;
             this.DgvOrders.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvOrders_RowHeaderMouseClick);
             // 
@@ -195,37 +183,53 @@
             // 
             // TxtReturningBook
             // 
-            this.TxtReturningBook.Location = new System.Drawing.Point(106, 419);
+            this.TxtReturningBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtReturningBook.Location = new System.Drawing.Point(436, 158);
             this.TxtReturningBook.Name = "TxtReturningBook";
-            this.TxtReturningBook.Size = new System.Drawing.Size(100, 20);
+            this.TxtReturningBook.Size = new System.Drawing.Size(190, 24);
             this.TxtReturningBook.TabIndex = 26;
             // 
             // TxtPayment
             // 
-            this.TxtPayment.Location = new System.Drawing.Point(296, 422);
+            this.TxtPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPayment.Location = new System.Drawing.Point(694, 157);
             this.TxtPayment.Name = "TxtPayment";
-            this.TxtPayment.Size = new System.Drawing.Size(100, 20);
+            this.TxtPayment.Size = new System.Drawing.Size(156, 24);
             this.TxtPayment.TabIndex = 27;
+            // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 28;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click);
             // 
             // ReturnBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.TxtPayment);
             this.Controls.Add(this.TxtReturningBook);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.LblClient);
             this.Controls.Add(this.CmbMember);
-            this.Controls.Add(this.PnlHeader);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LblReturningBook);
             this.Controls.Add(this.BtnReturn);
             this.Controls.Add(this.DgvOrders);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReturnBookForm";
             this.Text = "ReturnBookForm";
-            this.PnlHeader.ResumeLayout(false);
-            this.PnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,8 +241,6 @@
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Label LblClient;
         private System.Windows.Forms.ComboBox CmbMember;
-        private System.Windows.Forms.Panel PnlHeader;
-        private System.Windows.Forms.Label LblAdd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblReturningBook;
         private System.Windows.Forms.Button BtnReturn;
@@ -251,5 +253,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.TextBox TxtReturningBook;
         private System.Windows.Forms.TextBox TxtPayment;
+        private System.Windows.Forms.Button BtnBackArrow;
     }
 }
