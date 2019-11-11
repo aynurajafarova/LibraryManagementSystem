@@ -24,6 +24,8 @@ namespace LibraryManagementSystem.Forms
             FillMembersDgv();
         }
 
+
+        // This method will fill the DgvViewAllLibrarians 
         private void FillMembersDgv()
         {
             foreach (var librarian in _librarianService.AllLibrarians())
@@ -35,6 +37,7 @@ namespace LibraryManagementSystem.Forms
                                               librarian.Phone);
             }
         }
+
 
         private void DgvViewAllLibrarians_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -51,6 +54,8 @@ namespace LibraryManagementSystem.Forms
             BtnUpdate.Show();
         }
 
+
+        // This event will add new librarian 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             Librarian librarian = new Librarian
@@ -74,6 +79,8 @@ namespace LibraryManagementSystem.Forms
             Reset();
         }
 
+
+        // This event will delete the selected librarian
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bu əməliyyatı yerinə yetirmək istədiyinizə əminsiniz?", "Silmə", MessageBoxButtons.YesNo);
@@ -90,6 +97,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // The event will update the information about the selected librarian
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             _selectedLibrarian.Username = TxtLibrarianName.Text;
@@ -117,6 +126,8 @@ namespace LibraryManagementSystem.Forms
             TxtLibrarianEmail.Clear();
         }
 
+
+        // This event will close the current - EditLibrariansForm form and open the ViewAllLibrariansForm
         private void BtnBackArrow_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -125,6 +136,8 @@ namespace LibraryManagementSystem.Forms
             viewAllLibrariansForm.Show();
         }
 
+
+        // This event will close the current - EditLibrariansForm form and open the MainboardForm
         private void BtnEditLibrarians_Click(object sender, EventArgs e)
         {
             this.Hide();
