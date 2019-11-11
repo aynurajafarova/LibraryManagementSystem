@@ -15,6 +15,7 @@ namespace LibraryManagementSystem.Forms
 
         private Member _selectedMember;
         private Book _selectedBook;
+
         public OrderForm()
         {
             InitializeComponent();
@@ -31,6 +32,8 @@ namespace LibraryManagementSystem.Forms
             FillOrderTable();
         }
 
+
+        // This method help us to fill the CmbMember
         private void FillMembersCombo()
         {
             foreach (Member member in _memberService.AllMembers())
@@ -39,6 +42,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This method help us to fill the DgvAllBooks
         private void FillBooks()
         {
             foreach (var book in _bookService.AllBooks())
@@ -62,12 +67,22 @@ namespace LibraryManagementSystem.Forms
 
             TxtBookName.Text = _selectedBook.Name;
         }
+
+
         private void CmbMember_SelectedIndexChanged(object sender, EventArgs e)
         {
             _selectedMember = _memberService.Find((CmbMember.SelectedItem as ComboItem).Id);
+           
             CmbMember.Text = _selectedMember.Fullname;
+
+            //Reset();
+
+            //DgvOrders.Rows.Clear();
             FillOrderTable();
         }
+
+
+        // This method help us to fill the DgvOrders
         private void FillOrderTable()
         {
             if (_selectedMember != null)
@@ -86,6 +101,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This method will add new orders
         public void AddNewOrder()
         {
             Order order = new Order()
@@ -116,12 +133,16 @@ namespace LibraryManagementSystem.Forms
             DtpReturnDate.Value = DateTime.Now;
         }
 
+
+
+
+        // Clicking this button will create a new order
         private void BtnAddOrder_Click(object sender, EventArgs e)
         {
             if (DtpReturnDate.Value < DateTime.Now)
             {
                 MessageBox.Show("Qaytarilacaq tarix kitab goturulen tarixden kicik olmamalidi");
-                MessageBox.Show(_selectedMember.Id.ToString());
+                //MessageBox.Show(_selectedMember.Id.ToString());
 
                 return;
             }
@@ -145,5 +166,21 @@ namespace LibraryManagementSystem.Forms
         }
 
 
+        // This event will close the current - OrderForm form and open the MainboardForm
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
+
+        private void BtnBackArrow_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
+        }
     }
 }

@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblMember = new System.Windows.Forms.Label();
-            this.CmbMember = new System.Windows.Forms.ComboBox();
-            this.LblReturnedTime = new System.Windows.Forms.Label();
-            this.LblOrderingBook = new System.Windows.Forms.Label();
-            this.DtpReturnDate = new System.Windows.Forms.DateTimePicker();
-            this.BtnAddOrder = new System.Windows.Forms.Button();
-            this.TxtBookName = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.DgvAllBooks = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,74 +41,17 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
+            this.BtnAddOrder = new System.Windows.Forms.Button();
+            this.DtpReturnDate = new System.Windows.Forms.DateTimePicker();
+            this.LblOrderingBook = new System.Windows.Forms.Label();
+            this.LblReturnedTime = new System.Windows.Forms.Label();
+            this.TxtBookName = new System.Windows.Forms.TextBox();
+            this.CmbMember = new System.Windows.Forms.ComboBox();
+            this.LblMember = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAllBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LblMember
-            // 
-            this.LblMember.AutoSize = true;
-            this.LblMember.Location = new System.Drawing.Point(141, 28);
-            this.LblMember.Name = "LblMember";
-            this.LblMember.Size = new System.Drawing.Size(114, 13);
-            this.LblMember.TabIndex = 22;
-            this.LblMember.Text = "Istifadecinin ad,soyadi:";
-            // 
-            // CmbMember
-            // 
-            this.CmbMember.FormattingEnabled = true;
-            this.CmbMember.Location = new System.Drawing.Point(143, 53);
-            this.CmbMember.Name = "CmbMember";
-            this.CmbMember.Size = new System.Drawing.Size(154, 21);
-            this.CmbMember.TabIndex = 21;
-            this.CmbMember.SelectedIndexChanged += new System.EventHandler(this.CmbMember_SelectedIndexChanged);
-            // 
-            // LblReturnedTime
-            // 
-            this.LblReturnedTime.AutoSize = true;
-            this.LblReturnedTime.Location = new System.Drawing.Point(538, 31);
-            this.LblReturnedTime.Name = "LblReturnedTime";
-            this.LblReturnedTime.Size = new System.Drawing.Size(109, 13);
-            this.LblReturnedTime.TabIndex = 20;
-            this.LblReturnedTime.Text = "Geri qaytaracagi tarix:";
-            // 
-            // LblOrderingBook
-            // 
-            this.LblOrderingBook.AutoSize = true;
-            this.LblOrderingBook.Location = new System.Drawing.Point(337, 28);
-            this.LblOrderingBook.Name = "LblOrderingBook";
-            this.LblOrderingBook.Size = new System.Drawing.Size(122, 13);
-            this.LblOrderingBook.TabIndex = 19;
-            this.LblOrderingBook.Text = "Sifarish etdiyi kitabin adi:";
-            // 
-            // DtpReturnDate
-            // 
-            this.DtpReturnDate.Location = new System.Drawing.Point(539, 54);
-            this.DtpReturnDate.Name = "DtpReturnDate";
-            this.DtpReturnDate.Size = new System.Drawing.Size(155, 20);
-            this.DtpReturnDate.TabIndex = 17;
-            // 
-            // BtnAddOrder
-            // 
-            this.BtnAddOrder.BackColor = System.Drawing.Color.ForestGreen;
-            this.BtnAddOrder.FlatAppearance.BorderSize = 0;
-            this.BtnAddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BtnAddOrder.ForeColor = System.Drawing.Color.White;
-            this.BtnAddOrder.Location = new System.Drawing.Point(735, 40);
-            this.BtnAddOrder.Name = "BtnAddOrder";
-            this.BtnAddOrder.Size = new System.Drawing.Size(110, 34);
-            this.BtnAddOrder.TabIndex = 16;
-            this.BtnAddOrder.Text = "Elave et";
-            this.BtnAddOrder.UseVisualStyleBackColor = false;
-            this.BtnAddOrder.Click += new System.EventHandler(this.BtnAddOrder_Click);
-            // 
-            // TxtBookName
-            // 
-            this.TxtBookName.Location = new System.Drawing.Point(340, 53);
-            this.TxtBookName.Name = "TxtBookName";
-            this.TxtBookName.Size = new System.Drawing.Size(171, 20);
-            this.TxtBookName.TabIndex = 24;
             // 
             // DgvAllBooks
             // 
@@ -130,10 +67,10 @@
             this.Column3,
             this.Column4});
             this.DgvAllBooks.GridColor = System.Drawing.Color.Black;
-            this.DgvAllBooks.Location = new System.Drawing.Point(27, 161);
+            this.DgvAllBooks.Location = new System.Drawing.Point(144, 273);
             this.DgvAllBooks.Name = "DgvAllBooks";
             this.DgvAllBooks.ReadOnly = true;
-            this.DgvAllBooks.Size = new System.Drawing.Size(284, 263);
+            this.DgvAllBooks.Size = new System.Drawing.Size(396, 323);
             this.DgvAllBooks.TabIndex = 25;
             this.DgvAllBooks.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAllBooks_RowHeaderMouseClick);
             // 
@@ -178,10 +115,10 @@
             this.Column6,
             this.Column7});
             this.DgvOrders.GridColor = System.Drawing.Color.Black;
-            this.DgvOrders.Location = new System.Drawing.Point(330, 161);
+            this.DgvOrders.Location = new System.Drawing.Point(584, 273);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
-            this.DgvOrders.Size = new System.Drawing.Size(482, 263);
+            this.DgvOrders.Size = new System.Drawing.Size(605, 323);
             this.DgvOrders.TabIndex = 26;
             // 
             // dataGridViewTextBoxColumn1
@@ -221,11 +158,101 @@
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 27;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click_1);
+            // 
+            // BtnAddOrder
+            // 
+            this.BtnAddOrder.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnAddOrder.FlatAppearance.BorderSize = 0;
+            this.BtnAddOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BtnAddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddOrder.ForeColor = System.Drawing.Color.White;
+            this.BtnAddOrder.Location = new System.Drawing.Point(971, 148);
+            this.BtnAddOrder.Name = "BtnAddOrder";
+            this.BtnAddOrder.Size = new System.Drawing.Size(218, 48);
+            this.BtnAddOrder.TabIndex = 16;
+            this.BtnAddOrder.Text = "Yeni sifariş əlavə et";
+            this.BtnAddOrder.UseVisualStyleBackColor = false;
+            this.BtnAddOrder.Click += new System.EventHandler(this.BtnAddOrder_Click);
+            // 
+            // DtpReturnDate
+            // 
+            this.DtpReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpReturnDate.Location = new System.Drawing.Point(661, 163);
+            this.DtpReturnDate.Name = "DtpReturnDate";
+            this.DtpReturnDate.Size = new System.Drawing.Size(266, 24);
+            this.DtpReturnDate.TabIndex = 17;
+            // 
+            // LblOrderingBook
+            // 
+            this.LblOrderingBook.AutoSize = true;
+            this.LblOrderingBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblOrderingBook.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LblOrderingBook.Location = new System.Drawing.Point(380, 136);
+            this.LblOrderingBook.Name = "LblOrderingBook";
+            this.LblOrderingBook.Size = new System.Drawing.Size(159, 18);
+            this.LblOrderingBook.TabIndex = 19;
+            this.LblOrderingBook.Text = "Sifariş etdiyi kitabın adı:";
+            // 
+            // LblReturnedTime
+            // 
+            this.LblReturnedTime.AutoSize = true;
+            this.LblReturnedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReturnedTime.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LblReturnedTime.Location = new System.Drawing.Point(658, 134);
+            this.LblReturnedTime.Name = "LblReturnedTime";
+            this.LblReturnedTime.Size = new System.Drawing.Size(150, 18);
+            this.LblReturnedTime.TabIndex = 20;
+            this.LblReturnedTime.Text = "Geri qaytaracağı tarix:";
+            // 
+            // TxtBookName
+            // 
+            this.TxtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBookName.Location = new System.Drawing.Point(383, 165);
+            this.TxtBookName.Name = "TxtBookName";
+            this.TxtBookName.Size = new System.Drawing.Size(242, 24);
+            this.TxtBookName.TabIndex = 24;
+            // 
+            // CmbMember
+            // 
+            this.CmbMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbMember.FormattingEnabled = true;
+            this.CmbMember.Location = new System.Drawing.Point(143, 165);
+            this.CmbMember.Name = "CmbMember";
+            this.CmbMember.Size = new System.Drawing.Size(191, 26);
+            this.CmbMember.TabIndex = 21;
+            this.CmbMember.SelectedIndexChanged += new System.EventHandler(this.CmbMember_SelectedIndexChanged);
+            // 
+            // LblMember
+            // 
+            this.LblMember.AutoSize = true;
+            this.LblMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMember.ForeColor = System.Drawing.Color.DarkBlue;
+            this.LblMember.Location = new System.Drawing.Point(141, 136);
+            this.LblMember.Name = "LblMember";
+            this.LblMember.Size = new System.Drawing.Size(162, 18);
+            this.LblMember.TabIndex = 22;
+            this.LblMember.Text = "İstifadəçinin Ad, Soyadı:";
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.DgvOrders);
             this.Controls.Add(this.DgvAllBooks);
             this.Controls.Add(this.TxtBookName);
@@ -235,6 +262,7 @@
             this.Controls.Add(this.LblOrderingBook);
             this.Controls.Add(this.DtpReturnDate);
             this.Controls.Add(this.BtnAddOrder);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrderForm";
             this.Text = "OrderForm";
             ((System.ComponentModel.ISupportInitialize)(this.DgvAllBooks)).EndInit();
@@ -245,13 +273,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label LblMember;
-        private System.Windows.Forms.ComboBox CmbMember;
-        private System.Windows.Forms.Label LblReturnedTime;
-        private System.Windows.Forms.Label LblOrderingBook;
-        private System.Windows.Forms.DateTimePicker DtpReturnDate;
-        private System.Windows.Forms.Button BtnAddOrder;
-        private System.Windows.Forms.TextBox TxtBookName;
         private System.Windows.Forms.DataGridView DgvAllBooks;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -264,5 +285,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button BtnBackArrow;
+        private System.Windows.Forms.Button BtnAddOrder;
+        private System.Windows.Forms.DateTimePicker DtpReturnDate;
+        private System.Windows.Forms.Label LblOrderingBook;
+        private System.Windows.Forms.Label LblReturnedTime;
+        private System.Windows.Forms.TextBox TxtBookName;
+        private System.Windows.Forms.ComboBox CmbMember;
+        private System.Windows.Forms.Label LblMember;
     }
 }
