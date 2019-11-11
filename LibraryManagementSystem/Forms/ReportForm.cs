@@ -28,8 +28,8 @@ namespace LibraryManagementSystem.Forms
             FillReports();
         }
 
-       
 
+        // This method will fill DgvReports
         private void FillReports()
         {
             foreach (Order order in _orderService.Orders())
@@ -38,7 +38,7 @@ namespace LibraryManagementSystem.Forms
                 {
                     if (order.ReturnDate > order.MustBeReturned)
                     {
-                        Decimal fine = (order.ReturnDate - order.MustBeReturned).Days * (order.Cost * 5 / 100);
+                        Decimal fine = (order.ReturnDate.Day - order.MustBeReturned.Day) + (order.Cost * 5 / 100);
 
                         DgvReports.Rows.Add(order.Id, order.Member.Fullname, order.Book.Name, order.Cost + fine);
                         income += (order.Cost + fine);
@@ -53,17 +53,21 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // export to Excel
         private void BtnExport_Click(object sender, EventArgs e)
         {
             string str = string.Empty;
+
             DialogResult result = FbdChooseDirectory.ShowDialog();
+
             if (DialogResult.OK == result)
             {
                 str = FbdChooseDirectory.SelectedPath;
                 using (var workbook = new XLWorkbook())
                 {
                     var worksheet = workbook.Worksheets.Add("Reports");
-                    worksheet.Cell("A1").Value = "İstifadəçi adı";
+                    worksheet.Cell("A1").Value = "İstifadəçinin adı";
                     worksheet.Cell("B1").Value = "Kitabın adı";
                     worksheet.Cell("C1").Value = "Məbləğ";
 
@@ -79,18 +83,30 @@ namespace LibraryManagementSystem.Forms
                         worksheet.Cell(rowstart, 3).Value = row.Cells[3].Value;
                         rowstart++;
                     }
+
                     try
                     {
-                        workbook.SaveAs(Path.Combine(str, $"Report.xlsx"));
+                        workbook.SaveAs(Path.Combine(str, $"Hesabat.xlsx"));
                     }
                     catch
                     {
-                        MessageBox.Show("Close the other excel files");
+                        MessageBox.Show("Açıq olan faylı bağlayın");
                         return;
                     }
-                    MessageBox.Show("the excel file created");
+                    MessageBox.Show("Excel fayl yaradıldı");
                 }
             }
+        }
+
+
+
+        // This event will close the current - ReportForm form and open the MainboardForm
+        private void BtnBackArrow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainboardForm mainboardForm = new MainboardForm();
+            mainboardForm.Show();
         }
     }
 }

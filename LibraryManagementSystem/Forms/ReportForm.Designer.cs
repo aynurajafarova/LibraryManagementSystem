@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportForm));
             this.DgvReports = new System.Windows.Forms.DataGridView();
+            this.BtnExport = new System.Windows.Forms.Button();
+            this.FbdChooseDirectory = new System.Windows.Forms.FolderBrowserDialog();
+            this.BtnBackArrow = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnExport = new System.Windows.Forms.Button();
-            this.FbdChooseDirectory = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReports)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +54,44 @@
             this.Column3,
             this.Column4});
             this.DgvReports.GridColor = System.Drawing.Color.Black;
-            this.DgvReports.Location = new System.Drawing.Point(37, 32);
+            this.DgvReports.Location = new System.Drawing.Point(132, 85);
             this.DgvReports.Name = "DgvReports";
             this.DgvReports.ReadOnly = true;
-            this.DgvReports.Size = new System.Drawing.Size(442, 281);
+            this.DgvReports.Size = new System.Drawing.Size(1091, 440);
             this.DgvReports.TabIndex = 1;
+            // 
+            // BtnExport
+            // 
+            this.BtnExport.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnExport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnExport.BackgroundImage")));
+            this.BtnExport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExport.FlatAppearance.BorderSize = 0;
+            this.BtnExport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExport.ForeColor = System.Drawing.Color.DarkBlue;
+            this.BtnExport.Location = new System.Drawing.Point(1014, 573);
+            this.BtnExport.Name = "BtnExport";
+            this.BtnExport.Size = new System.Drawing.Size(209, 66);
+            this.BtnExport.TabIndex = 3;
+            this.BtnExport.Text = "            Excel file yarat";
+            this.BtnExport.UseVisualStyleBackColor = false;
+            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
+            // 
+            // BtnBackArrow
+            // 
+            this.BtnBackArrow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackArrow.BackgroundImage")));
+            this.BtnBackArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackArrow.FlatAppearance.BorderSize = 0;
+            this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackArrow.Location = new System.Drawing.Point(1280, 56);
+            this.BtnBackArrow.Name = "BtnBackArrow";
+            this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
+            this.BtnBackArrow.TabIndex = 4;
+            this.BtnBackArrow.UseVisualStyleBackColor = true;
+            this.BtnBackArrow.Click += new System.EventHandler(this.BtnBackArrow_Click);
             // 
             // Column1
             // 
@@ -83,28 +118,16 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
-            // BtnExport
-            // 
-            this.BtnExport.BackColor = System.Drawing.Color.ForestGreen;
-            this.BtnExport.FlatAppearance.BorderSize = 0;
-            this.BtnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BtnExport.ForeColor = System.Drawing.Color.White;
-            this.BtnExport.Location = new System.Drawing.Point(341, 381);
-            this.BtnExport.Name = "BtnExport";
-            this.BtnExport.Size = new System.Drawing.Size(138, 36);
-            this.BtnExport.TabIndex = 3;
-            this.BtnExport.Text = "Export to Excel";
-            this.BtnExport.UseVisualStyleBackColor = false;
-            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
-            // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.BtnExport);
             this.Controls.Add(this.DgvReports);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReportForm";
             this.Text = "ReportForm";
             ((System.ComponentModel.ISupportInitialize)(this.DgvReports)).EndInit();
@@ -115,11 +138,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DgvReports;
+        private System.Windows.Forms.Button BtnExport;
+        private System.Windows.Forms.FolderBrowserDialog FbdChooseDirectory;
+        private System.Windows.Forms.Button BtnBackArrow;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Button BtnExport;
-        private System.Windows.Forms.FolderBrowserDialog FbdChooseDirectory;
     }
 }
