@@ -31,3 +31,13 @@ C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryMan
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.OrderClassWasCreated.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ReturnBookForm.resources
 C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.MustBeReturnedPropertyAddedToTheOrderClass.resources
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ClosedXML.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ExcelNumberFormat.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\FastMember.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\System.IO.Packaging.dll
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ClosedXML.pdb
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ClosedXML.xml
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ExcelNumberFormat.xml
+C:\Users\User\Desktop\LibraryManagementSystem\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Forms.ReportForm.resources
