@@ -22,8 +22,7 @@ namespace LibraryManagementSystem.Forms
         {
             foreach (var book in _bookService.AllBooks())
             {
-                DgvViewAllBooks.Rows.Add(book.Id,
-                                         book.Name,
+                DgvViewAllBooks.Rows.Add(book.Name,
                                          book.Author,
                                          book.Price.ToString("0.00 $"),
                                          book.Quantity,
@@ -47,19 +46,18 @@ namespace LibraryManagementSystem.Forms
             foreach (var book in _bookService.AllBooks())
             {
                
-                if (book.Name.Contains(bookName) && book.Author.Contains(bookAuthor) && decimal.Floor(book.Price)==bookPrice)
+                if (book.Name.Contains(bookName)&& book.Author.Contains(bookAuthor)&& decimal.Floor(book.Price)==bookPrice)
                 {
 
-                   
-                    DgvViewAllBooks.Rows.Add(book.Id,
-                                             book.Name,
-                                             book.Author,
-                                             book.Price.ToString("0.00 $"),
-                                             book.Quantity,
-                                             book.PurchaseDate);
+
+                    DgvViewAllBooks.Rows.Add(book.Name,
+                                         book.Author,
+                                         book.Price.ToString("0.00 $"),
+                                         book.Quantity,
+                                         book.PurchaseDate);
                     findedBook += 1;
-                }
-         
+                   
+                }       
             }
             if (findedBook == 0)
             {
@@ -86,5 +84,7 @@ namespace LibraryManagementSystem.Forms
             EditBooksForm editBooksForm = new EditBooksForm();
             editBooksForm.Show();
         }
+
+       
     }
 }

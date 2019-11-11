@@ -30,12 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllBooksForm));
             this.DgvViewAllBooks = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BooksName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BooksAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PurchaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnSearchBook = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NumBookPrice = new System.Windows.Forms.NumericUpDown();
@@ -49,6 +43,11 @@
             this.TxtBookName = new System.Windows.Forms.TextBox();
             this.BtnBackArrow = new System.Windows.Forms.Button();
             this.BtnEditBooks = new System.Windows.Forms.Button();
+            this.BooksName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BooksAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PurchaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvViewAllBooks)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumBookPrice)).BeginInit();
@@ -64,7 +63,6 @@
             this.DgvViewAllBooks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DgvViewAllBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvViewAllBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
             this.BooksName,
             this.BooksAuthor,
             this.Price,
@@ -76,43 +74,6 @@
             this.DgvViewAllBooks.ReadOnly = true;
             this.DgvViewAllBooks.Size = new System.Drawing.Size(970, 343);
             this.DgvViewAllBooks.TabIndex = 3;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // BooksName
-            // 
-            this.BooksName.HeaderText = "Kitabın adı:";
-            this.BooksName.Name = "BooksName";
-            this.BooksName.ReadOnly = true;
-            // 
-            // BooksAuthor
-            // 
-            this.BooksAuthor.HeaderText = "Müəllif:";
-            this.BooksAuthor.Name = "BooksAuthor";
-            this.BooksAuthor.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Qiymət:";
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Say:";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // PurchaseDate
-            // 
-            this.PurchaseDate.HeaderText = "Tarix:";
-            this.PurchaseDate.Name = "PurchaseDate";
-            this.PurchaseDate.ReadOnly = true;
             // 
             // BtnSearchBook
             // 
@@ -279,12 +240,42 @@
             this.BtnEditBooks.UseVisualStyleBackColor = false;
             this.BtnEditBooks.Click += new System.EventHandler(this.BtnEditBooks_Click);
             // 
+            // BooksName
+            // 
+            this.BooksName.HeaderText = "Kitabın adı:";
+            this.BooksName.Name = "BooksName";
+            this.BooksName.ReadOnly = true;
+            // 
+            // BooksAuthor
+            // 
+            this.BooksAuthor.HeaderText = "Müəllif:";
+            this.BooksAuthor.Name = "BooksAuthor";
+            this.BooksAuthor.ReadOnly = true;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Qiymət:";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Say:";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // PurchaseDate
+            // 
+            this.PurchaseDate.HeaderText = "Tarix:";
+            this.PurchaseDate.Name = "PurchaseDate";
+            this.PurchaseDate.ReadOnly = true;
+            // 
             // ViewAllBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.BtnEditBooks);
             this.Controls.Add(this.BtnBackArrow);
             this.Controls.Add(this.panel1);
@@ -306,12 +297,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DgvViewAllBooks;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BooksName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BooksAuthor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PurchaseDate;
         private System.Windows.Forms.Button BtnSearchBook;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -325,5 +310,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button BtnBackArrow;
         private System.Windows.Forms.Button BtnEditBooks;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BooksName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BooksAuthor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PurchaseDate;
     }
 }
