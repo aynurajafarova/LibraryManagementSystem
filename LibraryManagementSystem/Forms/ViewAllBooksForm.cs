@@ -1,7 +1,5 @@
-﻿using LibraryManagementSystem.Models;
-using LibraryManagementSystem.Services;
+﻿using LibraryManagementSystem.Services;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem.Forms
@@ -34,6 +32,8 @@ namespace LibraryManagementSystem.Forms
 
         }
 
+
+        // This event will look for books in the database
         private void BtnSearchBook_Click(object sender, System.EventArgs e)
         {
 
@@ -67,6 +67,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will close the current - ViewAllBooksForm form and open the MainboardForm
         private void BtnBackArrow_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -75,6 +77,8 @@ namespace LibraryManagementSystem.Forms
             mainboardForm.Show();
         }
 
+
+        // This event will close the current - ViewAllBooksForm form and open the EditBooksForm
         private void BtnEditBooks_Click(object sender, EventArgs e)
         {
             this.Hide();

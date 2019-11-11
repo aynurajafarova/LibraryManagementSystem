@@ -1,13 +1,6 @@
 ﻿using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem.Forms
@@ -35,6 +28,8 @@ namespace LibraryManagementSystem.Forms
             BtnUpdate.Hide();
         }
 
+
+        // This method will fill the DgvBooks 
         private void FillBooks()
         {
             foreach (var book in _bookService.AllBooks())
@@ -76,6 +71,8 @@ namespace LibraryManagementSystem.Forms
             DtpPurchaseDate.ResetText();  
         }
 
+
+        // This event will add new book 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             Book book = new Book()
@@ -112,6 +109,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // The event will update the information about the selected book
         private void BtnUpdate_Click_1(object sender, EventArgs e)
         {
             _selectedBook.Name = TxtBookName.Text;
@@ -134,6 +133,8 @@ namespace LibraryManagementSystem.Forms
             MessageBox.Show(_selectedBook.Name + " adlı kitab məlumatları yeniləndi", "Yeniləmə");
         }
 
+
+        // This event will delete the selected book
         private void BtnDelete_Click_1(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bu kitabı silmək istədiyinizdən əminsiniz?", "Silmə", MessageBoxButtons.YesNo);
@@ -149,6 +150,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will close the current - EditBooksForm form and open the ViewAllBooksForm
         private void BtnBackArrow_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -157,6 +160,8 @@ namespace LibraryManagementSystem.Forms
             viewAllBooksForm.Show();
         }
 
+
+        // This event will close the current - EditBooksForm form and open the MainboardForm
         private void BtnMainboardForm_Click(object sender, EventArgs e)
         {
             this.Hide();
