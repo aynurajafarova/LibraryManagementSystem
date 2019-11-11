@@ -27,6 +27,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will close the current - ViewAllMembersForm form and open the MainboardForm
         private void BtnBackArrow_Click(object sender, System.EventArgs e)
         {
             this.Hide();
@@ -35,6 +37,8 @@ namespace LibraryManagementSystem.Forms
             mainboardForm.Show();
         }
 
+
+        // This event will look for members in the database
         private void BtnSearchMember_Click(object sender, System.EventArgs e)
         {
             string memberFullname = TxtMemberFullname.Text;
@@ -64,6 +68,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will close the current - ViewAllMembersForm form and open the EditMembersForm
         private void BtnEditMembers_Click(object sender, System.EventArgs e)
         {
             this.Hide();

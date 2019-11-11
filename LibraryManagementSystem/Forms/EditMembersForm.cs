@@ -1,13 +1,6 @@
 ﻿using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem.Forms
@@ -35,6 +28,8 @@ namespace LibraryManagementSystem.Forms
             BtnUpdate.Hide();
         }
 
+
+        // This method will fill the DgvViewAllMembers 
         private void FillMembers()
         {
             foreach (var member in _memberService.AllMembers())
@@ -49,6 +44,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will add new member
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             Member member = new Member
@@ -88,6 +85,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // The event will update the information about the selected member
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             _selectedMember.Fullname = TxtMemberFullname.Text;
@@ -111,6 +110,8 @@ namespace LibraryManagementSystem.Forms
             MessageBox.Show(_selectedMember.Fullname + " adlı istifadəçi məlumatları yeniləndi", "Yeniləmə");
         }
 
+
+        // This event will delete the selected member
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bu istifadəçini silmək istədiyinizdən əminsiniz?", "Silmə", MessageBoxButtons.YesNo);
@@ -152,8 +153,11 @@ namespace LibraryManagementSystem.Forms
             TxtMemberFullname.Clear();
             TxtMemberPhone.Clear();
             DtpCreatedAt.ResetText();
+            TxtMemberPassword.Clear();
         }
 
+
+        // This event will close the current - EditMembersForm form and open the viewAllMembersForm
         private void BtnBackArrow_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -162,6 +166,8 @@ namespace LibraryManagementSystem.Forms
             viewAllMembersForm.Show();
         }
 
+
+        // This event will close the current - EditMembersForm form and open the MainboardForm
         private void BtnMainboard_Click(object sender, EventArgs e)
         {
             this.Hide();
