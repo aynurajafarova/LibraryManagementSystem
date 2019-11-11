@@ -66,10 +66,10 @@
             this.Email,
             this.Phone});
             this.DgvViewAllLibrarians.GridColor = System.Drawing.Color.CadetBlue;
-            this.DgvViewAllLibrarians.Location = new System.Drawing.Point(69, 277);
+            this.DgvViewAllLibrarians.Location = new System.Drawing.Point(157, 270);
             this.DgvViewAllLibrarians.Name = "DgvViewAllLibrarians";
             this.DgvViewAllLibrarians.ReadOnly = true;
-            this.DgvViewAllLibrarians.Size = new System.Drawing.Size(898, 356);
+            this.DgvViewAllLibrarians.Size = new System.Drawing.Size(1020, 346);
             this.DgvViewAllLibrarians.TabIndex = 2;
             // 
             // Username
@@ -103,7 +103,7 @@
             this.BtnBackArrow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnBackArrow.FlatAppearance.BorderSize = 0;
             this.BtnBackArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBackArrow.Location = new System.Drawing.Point(971, 22);
+            this.BtnBackArrow.Location = new System.Drawing.Point(1287, 56);
             this.BtnBackArrow.Name = "BtnBackArrow";
             this.BtnBackArrow.Size = new System.Drawing.Size(37, 37);
             this.BtnBackArrow.TabIndex = 3;
@@ -123,15 +123,15 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.BtnSearchLibrarian);
             this.panel1.Controls.Add(this.TxtLibrarianName);
-            this.panel1.Location = new System.Drawing.Point(69, 101);
+            this.panel1.Location = new System.Drawing.Point(157, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 114);
+            this.panel1.Size = new System.Drawing.Size(1020, 141);
             this.panel1.TabIndex = 7;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel3.Location = new System.Drawing.Point(589, 72);
+            this.panel3.Location = new System.Drawing.Point(646, 87);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 1);
             this.panel3.TabIndex = 24;
@@ -143,7 +143,7 @@
             this.TxtLibrarianPhone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtLibrarianPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLibrarianPhone.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtLibrarianPhone.Location = new System.Drawing.Point(589, 50);
+            this.TxtLibrarianPhone.Location = new System.Drawing.Point(646, 65);
             this.TxtLibrarianPhone.Multiline = true;
             this.TxtLibrarianPhone.Name = "TxtLibrarianPhone";
             this.TxtLibrarianPhone.Size = new System.Drawing.Size(214, 20);
@@ -154,7 +154,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(588, 25);
+            this.label3.Location = new System.Drawing.Point(645, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 18);
             this.label3.TabIndex = 22;
@@ -165,7 +165,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(299, 26);
+            this.label2.Location = new System.Drawing.Point(356, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 18);
             this.label2.TabIndex = 21;
@@ -176,7 +176,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Location = new System.Drawing.Point(78, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 18);
             this.label1.TabIndex = 20;
@@ -185,7 +185,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel4.Location = new System.Drawing.Point(302, 71);
+            this.panel4.Location = new System.Drawing.Point(359, 86);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 1);
             this.panel4.TabIndex = 19;
@@ -197,7 +197,7 @@
             this.TxtLibrarianEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtLibrarianEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLibrarianEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtLibrarianEmail.Location = new System.Drawing.Point(302, 49);
+            this.TxtLibrarianEmail.Location = new System.Drawing.Point(359, 64);
             this.TxtLibrarianEmail.Multiline = true;
             this.TxtLibrarianEmail.Name = "TxtLibrarianEmail";
             this.TxtLibrarianEmail.Size = new System.Drawing.Size(235, 20);
@@ -206,7 +206,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel2.Location = new System.Drawing.Point(29, 74);
+            this.panel2.Location = new System.Drawing.Point(81, 89);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(235, 1);
             this.panel2.TabIndex = 15;
@@ -220,7 +220,7 @@
             this.BtnSearchLibrarian.FlatAppearance.BorderSize = 0;
             this.BtnSearchLibrarian.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnSearchLibrarian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSearchLibrarian.Location = new System.Drawing.Point(832, 40);
+            this.BtnSearchLibrarian.Location = new System.Drawing.Point(889, 55);
             this.BtnSearchLibrarian.Name = "BtnSearchLibrarian";
             this.BtnSearchLibrarian.Size = new System.Drawing.Size(36, 35);
             this.BtnSearchLibrarian.TabIndex = 2;
@@ -234,7 +234,7 @@
             this.TxtLibrarianName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtLibrarianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLibrarianName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtLibrarianName.Location = new System.Drawing.Point(29, 52);
+            this.TxtLibrarianName.Location = new System.Drawing.Point(81, 67);
             this.TxtLibrarianName.Multiline = true;
             this.TxtLibrarianName.Name = "TxtLibrarianName";
             this.TxtLibrarianName.Size = new System.Drawing.Size(235, 20);
@@ -251,7 +251,7 @@
             this.BtnEditLibrarians.ForeColor = System.Drawing.Color.White;
             this.BtnEditLibrarians.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditLibrarians.Image")));
             this.BtnEditLibrarians.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEditLibrarians.Location = new System.Drawing.Point(677, 667);
+            this.BtnEditLibrarians.Location = new System.Drawing.Point(887, 673);
             this.BtnEditLibrarians.Name = "BtnEditLibrarians";
             this.BtnEditLibrarians.Size = new System.Drawing.Size(290, 42);
             this.BtnEditLibrarians.TabIndex = 8;
@@ -265,7 +265,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1031, 749);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.BtnEditLibrarians);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnBackArrow);

@@ -6,6 +6,7 @@ namespace LibraryManagementSystem.Forms
     public partial class ViewAllLibrariansForm : Form
     {
         private readonly LibrarianService _librarianService;
+
         public ViewAllLibrariansForm()
         {
             InitializeComponent();
@@ -28,6 +29,8 @@ namespace LibraryManagementSystem.Forms
             }
         }
 
+
+        // This event will close the current - ViewAllLibrariansForm form and open the MainboardForm
         private void BtnBackArrow_Click(object sender, System.EventArgs e)
         {
             this.Hide();
@@ -36,6 +39,8 @@ namespace LibraryManagementSystem.Forms
             mainboardForm.Show();
         }
 
+
+        // This event will close the current - ViewAllLibrariansForm form and open the EditLibrariansForm
         private void BtnEditLibrarians_Click(object sender, System.EventArgs e)
         {
             this.Hide();
@@ -44,6 +49,8 @@ namespace LibraryManagementSystem.Forms
             editLibrariansForm.Show();
         }
 
+
+        // This event will look for librarians in the database
         private void BtnSearchLibrarian_Click(object sender, System.EventArgs e)
         {
             string librarianUsername = TxtLibrarianName.Text;
